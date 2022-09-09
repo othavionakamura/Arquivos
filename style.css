@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    scroll-behavior: smooth;
+}
+:root{
+    --crl: #000000;
+}
+body{
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("bg.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content{
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+#home{
+    margin-top: 8%;
+    padding-left: 80px;
+    padding-right: 200px;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+#home .esq{
+    width: 50%;
+}
+
+#home .dir{
+    padding-top: 10px;
+    margin-left: -110px;
+    width: 50%;
+}
+path:hover{
+    cursor: pointer;
+    fill: #ff7f00;
+}
+#home h1{
+    color: #ff7f00;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+#home p{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(226, 226, 226);
+}
+
+.redes{
+    padding-top: 50px;
+    letter-spacing: 40px;
+    font-size: 25px;
+}
+
+.redes .icon:hover{
+    cursor: pointer;
+    color: #0098e4;
+}
+
+#home span{
+    filter: invert(100%)
+}
+
+#profile{
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+#profile h1{
+    color: #ff7f00;
+}
+#profile p{
+    font-family: 'Open Sans', sans-serif;
+    color: beige;
+}
+
+#message{
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+#message h1{
+    color: #ff7f00;
+}
+#message p{
+    font-family: 'Open Sans', sans-serif;
+    color: beige;
+}
