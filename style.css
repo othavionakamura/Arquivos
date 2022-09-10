@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+@keyframes entrada{
+    0%{
+      margin-top: 500px;
+      opacity: 20%;
+    }
+    100%{
+      margin-top: 0;
+      opacity: 100%;
+    }
+  }
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +16,9 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     scroll-behavior: smooth;
+}
+body{
+    animation: entrada .9s ease-out;
 }
 :root{
     --crl: #000000;
