@@ -58,10 +58,10 @@ body{
 }
 path:hover{
     cursor: pointer;
-    fill: #29fd53;
+    fill: #ff7f00;
 }
 #home h1{
-    color: #29fd53;
+    color: #ff7f00;
     font-size: 70px;
     line-height: 70px;
     margin-bottom: 20px;
@@ -94,7 +94,7 @@ path:hover{
     flex: 0 0 auto;
 }
 #profile h1{
-    color: #29fd53;
+    color: #ff7f00;
 }
 #profile p{
     font-family: 'Open Sans', sans-serif;
@@ -114,4 +114,8 @@ path:hover{
 #message p{
     font-family: 'Open Sans', sans-serif;
     color: beige;
+}
+
+a:visited{
+    fill: #ff7f00;
 }
