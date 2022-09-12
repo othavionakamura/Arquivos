@@ -58,10 +58,10 @@ body{
 }
 path:hover{
     cursor: pointer;
-    fill: #ff7f00;
+    fill: #29fd53;
 }
 #home h1{
-    color: #ff7f00;
+    color: #29fd53;
     font-size: 70px;
     line-height: 70px;
     margin-bottom: 20px;
@@ -94,7 +94,7 @@ path:hover{
     flex: 0 0 auto;
 }
 #profile h1{
-    color: #ff7f00;
+    color: #29fd53;
 }
 #profile p{
     font-family: 'Open Sans', sans-serif;
