@@ -46,7 +46,7 @@ body{
 }
 path:hover{
     cursor: pointer;
-    fill: #ff7f00;
+    fill: white;
 }
 #home h1{
     color: #ff7f00;
@@ -105,5 +105,5 @@ path:hover{
 }
 
 a:visited{
-    fill: #ff7f00;
+    fill: none;
 }
