@@ -1,5 +1,80 @@
-@media screen and (max-width: 890px){
-    .navigation{
-        display: none;
+@media screen and (max-width: 1920px){
+    #home .esq{
+        width: 50%;
+        padding-left: 80px;
+        padding-top: 50px;
+    }
+    #home h1{
+        color: #ff7f00;
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 20px;
+    }
+    #home p{
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(226, 226, 226);
+        font-size: 20px;
+    }
+
+    .redes{
+        padding-top: 70px;
+        letter-spacing: 60px;
+        font-size: 45px;
+    }
+
+    .redes .icon:hover{
+        cursor: pointer;
+        color: #0098e4;
+    }
+    #home span{
+        filter: invert(100%)
+    }
+    #home .dir{
+        padding-top: 10px;
+        margin-left: -20px;
+        width: 50%;
+    }
+    svg{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    #home .esq{
+        width: 50%;
+        padding-left: 80px;
+    }
+    #home h1{
+        color: #ff7f00;
+        font-size: 70px;
+        line-height: 100px;
+        margin-bottom: 20px;
+    }
+    #home p{
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(226, 226, 226);
+        font-size: 18px;
+    }
+
+    .redes{
+        padding-top: 70px;
+        letter-spacing: 60px;
+        font-size: 35px;
+    }
+
+    .redes .icon:hover{
+        cursor: pointer;
+        color: #0098e4;
+    }
+    #home span{
+        filter: invert(100%)
+    }
+    #home .dir{
+        padding-top: 10px;
+        margin-left: -50px;
+        width: 50%;
+    }
+    svg{
+        height: 550px;
     }
 }
