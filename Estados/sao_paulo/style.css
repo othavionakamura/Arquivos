@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-body{
-    background-color: aqua;
+#main{
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#main h1{
+    transform: rotate(-3deg);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    margin-bottom: -45px;
+    text-shadow: rgb(0, 0, 0) 15px 15px 25px;
+    background-size: cover;
+    border-radius: 30px;
+    animation-duration: 1s;
+    position: relative;
+    z-index: 10;
+}
+#main #bandeira{
+    height: 500px;
+    z-index: 0;
 }
