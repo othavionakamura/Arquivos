@@ -101,7 +101,7 @@
     font-size: 250px;
     text-transform: capitalize;
     color: transparent;
-    -webkit-text-stroke: 3px #000;
+    -webkit-text-stroke: 3px #fff;
 }
   
   .text::before {
@@ -109,7 +109,7 @@
     position: absolute;
     width: 0;
     height: 100%;
-    color: #000;
+    color: #fff;
     -webkit-text-stroke: 0px transparent;
     overflow: hidden;
     transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
