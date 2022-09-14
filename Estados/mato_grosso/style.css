@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+
+
 #main{
     background-image: url('bg.png');
     background-repeat: no-repeat;
@@ -44,11 +46,21 @@
     top: -470px;
     left: 260px;
 }
+@media screen and (max-width: 1920px){
+    #sinopse{
+        left: 160px
+    }
+}
 
 #dados{
     position: relative;
     top: -279px;
     left: -32px;
+}
+@media screen and (max-width: 1920px){
+    #dados{
+        left: -10px
+    }
 }
 
 #geografia{
@@ -56,11 +68,21 @@
     top: -119px;
     left: -192px;
 }
+@media screen and (max-width: 1920px){
+    #geografia{
+        left: -100px
+    }
+}
 
 #hidrografia{
     position: relative;
     top: -10px;
     left: -159px;
+}
+@media screen and (max-width: 1920px){
+    #hidrografia{
+        left: -120px
+    }
 }
 
 #clima{
@@ -68,11 +90,21 @@
     top: -20px;
     left: -70px;
 }
+@media screen and (max-width: 1920px){
+    #clima{
+        left: -15px
+    }
+}
 
 #cultura{
         position: relative;
         top: -40px;
         left: 50px;
+}
+@media screen and (max-width: 1920px){
+    #cultura{
+        left: 120px
+    }
 }
 
 #economia{
@@ -80,11 +112,21 @@
     top: -190px;
     left: 120px;
 }
+@media screen and (max-width: 1920px){
+    #economia{
+        left: 160px
+    }
+}
 
 #governo{
     position: relative;
     top: -317px;
     left: -50px;
+}
+@media screen and (max-width: 1920px){
+    #governo{
+        left: 160px
+    }
 }
 
 #historia{
@@ -92,25 +134,40 @@
     top: -425px;
     left: -195px;
 }
-
+@media screen and (max-width: 1920px){
+    #historia{
+        left: -10px
+    }
+}
 .animate__zoomIn{
     animation-delay: 1s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .text {
     position: relative;
-    font-size: 25px;
+    font-size: 250px;
     text-transform: capitalize;
     color: transparent;
-    -webkit-text-stroke: 1px #fff;
-}
+    -webkit-text-stroke: .5px #ffffff;
+  }
   
   .text::before {
     content: attr(data-fill-text);
     position: absolute;
     width: 0;
     height: 100%;
-    color: #fff;
+    color: #ffffff;
     -webkit-text-stroke: 0px transparent;
     overflow: hidden;
     transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
