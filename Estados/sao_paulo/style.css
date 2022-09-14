@@ -26,3 +26,95 @@
     height: 500px;
     z-index: 0;
 }
+
+.buttons{
+    position: relative;
+}
+
+.buttons a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+}
+
+#sinopse{
+    position: relative;
+    top: -470px;
+    left: 260px;
+}
+
+#dados{
+    position: relative;
+    top: -279px;
+    left: -32px;
+}
+
+#geografia{
+    position: relative;
+    top: -119px;
+    left: -192px;
+}
+
+#hidrografia{
+    position: relative;
+    top: -10px;
+    left: -159px;
+}
+
+#clima{
+    position: relative;
+    top: -20px;
+    left: -70px;
+}
+
+#cultura{
+        position: relative;
+        top: -40px;
+        left: 50px;
+}
+
+#economia{
+    position: relative;
+    top: -190px;
+    left: 120px;
+}
+
+#governo{
+    position: relative;
+    top: -317px;
+    left: -50px;
+}
+
+#historia{
+    position: relative;
+    top: -425px;
+    left: -195px;
+}
+
+.animate__zoomIn{
+    animation-delay: 1s;
+}
+
+.text {
+    position: relative;
+    font-size: 250px;
+    text-transform: capitalize;
+    color: transparent;
+    -webkit-text-stroke: 3px #000;
+}
+  
+  .text::before {
+    content: attr(data-fill-text);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    color: #000;
+    -webkit-text-stroke: 0px transparent;
+    overflow: hidden;
+    transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .text:hover::before {
+    width: 100%;
+  }
