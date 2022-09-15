@@ -93,6 +93,41 @@
     left: -195px;
 }
 
+
+
+
+
+@media screen and (max-width: 1920px){
+    #sinopse{
+        left: 160px
+    }
+    #dados{
+        left: -10px
+    }
+    #geografia{
+        left: -100px
+    }
+    #hidrografia{
+        left: -120px
+    }
+    #clima{
+        left: -15px
+    }
+    #cultura{
+        left: 120px
+    }
+    #economia{
+        left: 195px
+    }
+    #governo{
+        left: 40px
+    }
+    #historia{
+        left: -90px
+    }
+}
+
+
 .animate__zoomIn{
     animation-delay: 1s;
 }
@@ -119,3 +154,19 @@
   .text:hover::before {
     width: 100%;
   }
+
+
+
+
+
+.sinopse{
+    width: 100%;
+}
+
+.sinopse p{
+    width: 40%;
+}
+
+.geografia p{
+    width: 40%;
+}

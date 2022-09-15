@@ -114,7 +114,7 @@
 }
 @media screen and (max-width: 1920px){
     #economia{
-        left: 160px
+        left: 195px
     }
 }
 
@@ -125,7 +125,7 @@
 }
 @media screen and (max-width: 1920px){
     #governo{
-        left: 160px
+        left: 40px
     }
 }
 
@@ -136,7 +136,7 @@
 }
 @media screen and (max-width: 1920px){
     #historia{
-        left: -10px
+        left: -90px
     }
 }
 .animate__zoomIn{
