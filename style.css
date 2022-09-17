@@ -22,58 +22,166 @@ body{
     overflow-y: hidden;
 }
 
+
+
 .content{
     display: flex;
     -webkit-overflow-scrolling: touch;
 }
 
 #home{
-    margin-top: 8%;
-    padding-left: 80px;
-    padding-right: 200px;
     width: 100%;
+    margin-top: 30px;
     flex: 0 0 auto;
-    display: flex;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
-#home .esq{
-    width: 50%;
+#home .cima{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
 }
 
-#home .dir{
-    padding-top: 10px;
-    margin-left: -110px;
-    width: 50%;
+#home .cima .escolha{
+    font-size: 40px;
+    margin-left: -220px;
+    color: white;
+    letter-spacing: 7px;
+    text-transform: uppercase;
 }
-path:hover{
+#home .cima .regiao{
+    text-transform: uppercase;
+    color: white;
+    font-size: 140px;
+    letter-spacing: 10px;
+    line-height: 20px;
+}
+
+#home .baixo{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#home .baixo{
+    display: flex;
+    justify-content: space-around;
+}
+
+#home .baixo .norte{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('img_estados/norte.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 35vh;
+    object-fit: contain;
+    border-radius: 20px;
+}
+#home .baixo .norte h2{
+    color: white;
+    text-align: center;
+    padding-top: 110%;
+    text-transform: capitalize;
+}
+
+.norte:hover{
     cursor: pointer;
-    fill: white;
-}
-#home h1{
-    color: #ff7f00;
-    font-size: 70px;
-    line-height: 70px;
-    margin-bottom: 20px;
-}
-#home p{
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(226, 226, 226);
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
 }
 
-.redes{
-    padding-top: 50px;
-    letter-spacing: 40px;
-    font-size: 25px;
+#home .baixo .nordeste{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('img_estados/nordeste.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 35vh;
+    object-fit:contain;
+    border-radius: 20px;
 }
-
-.redes .icon:hover{
+#home .baixo .nordeste h2{
+    color: white;
+    text-align: center;
+    padding-top: 110%;
+    text-transform: capitalize;
+}
+.nordeste:hover{
     cursor: pointer;
-    color: #0098e4;
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
 }
 
-#home span{
-    filter: invert(100%)
+#home .baixo .centro{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('img_estados/centro.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 35vh;
+    object-fit:contain;
+    border-radius: 20px;
 }
+#home .baixo .centro h2{
+    color: white;
+    text-align: center;
+    padding-top: 110%;
+    text-transform: capitalize;
+}
+.centro:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
+}
+
+#home .baixo .sudeste{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('img_estados/sudeste.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 35vh;
+    object-fit:contain;
+    border-radius: 20px;
+}
+#home .baixo .sudeste h2{
+    color: white;
+    text-align: center;
+    padding-top: 110%;
+    text-transform: capitalize;
+}
+.sudeste:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
+}
+
+#home .baixo .sul{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('img_estados/sul.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 35vh;
+    object-fit:contain;
+    border-radius: 20px;
+}
+#home .baixo .sul h2{
+    color: white;
+    text-align: center;
+    padding-top: 110%;
+    text-transform: capitalize;
+}
+.sul:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 #profile{
     margin-top: 100px;
