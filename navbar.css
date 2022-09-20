@@ -12,7 +12,6 @@ nav{
     position: relative;
     width: 600px;
     height: 70px;
-    left: -1%;
     display: flex;
     justify-content: center;
     align-items: center;
