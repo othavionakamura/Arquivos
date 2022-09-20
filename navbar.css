@@ -54,7 +54,7 @@ nav{
      color: white;
 }
 .navigation ul li.active a .icon{
-    transform: translateY(35px);
+    transform: translateY(25px);
 }
 .navigation ul li a .text{
     position: absolute;
@@ -74,7 +74,7 @@ nav{
 
 .indicator{
     position: absolute;
-    top: 135%;
+    top: 125%;
     left: 7.4%;
     width: 70px;
     height: 1px;
