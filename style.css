@@ -38,7 +38,7 @@ body{
 }
 #home .cima{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 130px;
     text-align: center;
 }
 
@@ -47,6 +47,7 @@ body{
     margin-left: -220px;
     color: white;
     letter-spacing: 7px;
+    line-height: 130px;
     text-transform: uppercase;
 }
 #home .cima .regiao{
@@ -55,6 +56,10 @@ body{
     font-size: 140px;
     letter-spacing: 10px;
     line-height: 20px;
+}
+
+#home .baixo{
+    top: 200px;
 }
 
 
@@ -67,7 +72,7 @@ body{
     animation: fade 1s ease-in alternate;
 }
 #profile h1{
-    color: #ff7f00;
+    color: white;
 }
 #profile p{
     font-family: 'Open Sans', sans-serif;
@@ -82,7 +87,7 @@ body{
     flex: 0 0 auto;
 }
 #message h1{
-    color: #ff7f00;
+    color: white;
 }
 #message p{
     font-family: 'Open Sans', sans-serif;
@@ -136,13 +141,4 @@ footer a:last-child::after{
 footer a:last-child{
     content: none;
     padding-right: 0;
-}
-
-@keyframes fade {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
 }

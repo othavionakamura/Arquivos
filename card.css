@@ -1,26 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+
+.titulo{
+  color: white;
+  font-size: 50px;
+  margin-top: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  background: rgba(0, 0, 0, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+}
 
 .container{
-    display: flex;
-    position: relative;
+  display: flex;
+  padding-top: 4%;
 }
 
 .flip-card-container {
-    font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
   --hue: 150;
   --primary: hsl(var(--hue), 50%, 50%);
   --white-1: hsl(0, 0%, 90%);
   --white-2: hsl(0, 0%, 80%);
   --dark: hsl(var(--hue), 25%, 10%);
   --grey: hsl(0, 0%, 50%);
+
   width: 310px;
   height: 500px;
-  margin: 40px;
+  margin: 35px;
 
   perspective: 1000px;
 }
 
-/* .flip-card */
 .flip-card {
   width: inherit;
   height: inherit;
@@ -39,11 +55,11 @@
 /* .card-... */
 .card-front,
 .card-back {
-  width: 80%;
+  width: 100%;
   height: 80%;
   border-radius: 24px;
 
-  background: var(--dark);
+  background: rgba(18, 18, 18, 0.564);
   position: absolute;
   top: 0;
   left: 0;
@@ -114,11 +130,7 @@ figcaption {
 
 /* .img-bg */
 .img-bg {
-  background: hsla(var(--hue), 25%, 10%, .5);
-}
-
-.card-front .img-bg {
-  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+  background: hsla(var(--hue), 25%, 10%, .3);
 }
 
 .card-back .img-bg {
@@ -128,9 +140,10 @@ figcaption {
 /* hover state */
 .flip-card-container:hover .card-front .img-bg::before {
   width: 6px;
-  border-left-color: var(--primary);
-  border-right-color: var(--primary);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(255, 255, 255, 0.5);
 }
+
 
 .btn {
   font-family: inherit;
@@ -151,8 +164,8 @@ figcaption {
 .btn:hover,
 .btn:focus {
   color: white;
-  background: hsla(var(--hue), 25%, 10%, .2);
-  border-color: white;
+  background: rgba(255, 255, 255, 0.5);
+  border-color: currentColor;
 }
 
 .btn:active {
@@ -258,19 +271,9 @@ figcaption {
   top: 56%;
 }
 
-/* states */
 .btn:hover+.design-container,
 .btn:active+.design-container,
 .btn:focus+.design-container {
   --tr: 20;
   --op: .7;
-}
-
-.abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 16px;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
