@@ -28,6 +28,6 @@ CREATE TABLE cadastro_ongs(
     img4 VARCHAR(100) NULL DEFAULT NULL
 );
 
-select * from imagem;
+select * from cadastro;
 
 drop database site;
