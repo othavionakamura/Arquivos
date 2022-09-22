@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    scroll-behavior: smooth;
+    scroll-behavior: revert-layer;
 }
 :root{
     --crl: #000000;
