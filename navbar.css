@@ -71,6 +71,19 @@ nav{
     transform: translateY(-20px);
 }
 
+.navigation ul li.active:active #home{
+    animation: fade 2s alternate;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .indicator{
     position: absolute;
     top: 125%;
