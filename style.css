@@ -65,7 +65,7 @@ body{
 
 
 #profile{
-    margin-top: 100px;
+    margin-top: 15%;
     padding-left: 40px;
     padding-right: 40px;
     width: 100%;
@@ -98,13 +98,13 @@ body{
 
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: -11%;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 0.547);
     width: 100%;
-    height: 5vh;    
-    line-height: 2vh;
-    display: flexbox;
+    height: 60px;    
+    line-height: 3vh;
     text-align: center;
 }
 
@@ -113,6 +113,7 @@ footer p{
     font-weight: 100;
     text-align: center;
     margin-left: -35px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -142,4 +143,9 @@ footer a:last-child::after{
 footer a:last-child{
     content: none;
     padding-right: 0;
+}
+
+footer:hover{
+    cursor: pointer;
+    bottom: -7%;
 }
