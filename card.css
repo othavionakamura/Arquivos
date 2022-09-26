@@ -172,14 +172,14 @@ figcaption {
 .btn:focus {
   color: white;
   background: rgba(255, 255, 255, 0.5);
-  border-color: currentColor;
+  border-color: black;
 }
 
 .btn:active {
   transform: translate(2px);
 }
 
-/* .design-container */
+
 .design-container {
   --tr: 90;
   --op: .5;
@@ -195,7 +195,7 @@ figcaption {
   pointer-events: none;
 }
 
-/* .design */
+
 .design {
   display: block;
 
@@ -278,7 +278,7 @@ figcaption {
   top: 56%;
 }
 
-.btn:hover+.design-container,
+.btn2:hover+.design-container,
 .btn:active+.design-container,
 .btn:focus+.design-container {
   --tr: 20;
