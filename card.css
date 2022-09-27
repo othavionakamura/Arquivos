@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
 
-
 .titulo{
   color: white;
   font-size: 50px;
@@ -125,7 +124,7 @@ figcaption {
   line-height: 1.6;
   letter-spacing: 2px;
   word-spacing: 6px;
-  text-align: right;
+  text-align: left;
 
   position: absolute;
   top: 0;

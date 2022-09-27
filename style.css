@@ -81,6 +81,7 @@ body{
 
 #profile .right{
     width: 40%;
+    margin-top: 15vh;
 }
 
 #profile h1{
@@ -91,6 +92,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 20px;
+    font-weight: 400;
 }
 
 #message{
