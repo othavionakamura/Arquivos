@@ -277,31 +277,7 @@
 
 
             <div class="right">
-                <div class="grafico">
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">
-
-                        <div class="slide s1">
-                            <canvas id="myChart" width="100%" height="60%"></canvas>
-                        </div>
-                        <div class="slide">
-                            <canvas id="myChart1" width="100%" height="60%"></canvas>
-                        </div>
-                        <div class="slide">
-                            <canvas id="myChart2" width="100%" height="60%"></canvas>
-                        </div>
-                    </div>
-
-                    <div class="botoes_navegacao">
-                        <label for="slide1" class="bar">PIB</label>
-                        <label for="slide2" class="bar">IDH</label>
-                        <label for="slide3" class="bar">GINI</label>
-                    </div>
-                </div>
+                <canvas id="myChart" width="100%" height="60%"></canvas>
             </div>
         </div>
 
@@ -352,91 +328,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script>
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020',],
-                datasets: [{
-                    label: 'PIB (Trilhões R$)',
-                    data: [1.19, 1.31, 1.48, 1.71, 1.95, 2.17, 2.40, 2.72, 3.10, 3.33, 3.88, 4.37, 4.81, 5.33, 5.77, 5.99, 6.26, 6.28, 7.04, 7.1, 7.4],
-                    backgroundColor: [
-                        'rgba(255, 255, 255, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(57, 255, 20, 0.2)',
-                    ],
-                    borderWidth: 1.5
-                }],
-
-            },
-
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-    <script>
-        const ctx1 = document.getElementById('myChart1').getContext('2d');
-        const myChart1 = new Chart(ctx1, {
-            type: 'line',
-            data: {
-                labels: ['1990','1991','1992','1993','1994','1995','1996','1997','1998','1999','2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
-                datasets: [{
-                    label: 'PIB (Trilhões R$)',
-                    data: [0.613, 0.621	, 0.627, 0.635	, 0.642, 0.651	, 0.658	, 0.665	, 0.670, 0.676	, 0.685, 0.691, 0.699	, 0.695	, 0.698, 0.700	, 0.702, 0.706, 0.717	, 0.719	, 0.727 , 0.731	,0.735, 0.753 , 0.756	,0.756 ,0.758	,0.761 ,0.762, 0.765, 0.754],
-                    backgroundColor: [
-                        'rgba(255, 255, 255, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(57, 255, 20, 0.2)',
-                    ],
-                    borderWidth: 1.5
-                }],
-
-            },
-
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-    <script>
-        const ctx2 = document.getElementById('myChart2').getContext('2d');
-        const myChart2 = new Chart(ctx2, {
-            type: 'line',
-            data: {
-                labels: ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020',],
-                datasets: [{
-                    label: 'PIB (Trilhões R$)',
-                    data: [1.19, 1.31, 1.48, 1.71, 1.95, 2.17, 2.40, 2.72, 3.10, 3.33, 3.88, 4.37, 4.81, 5.33, 5.77, 5.99, 6.26, 6.28, 7.04, 7.1, 7.4],
-                    backgroundColor: [
-                        'rgba(255, 255, 255, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(57, 255, 20, 0.2)',
-                    ],
-                    borderWidth: 1.5
-                }],
-
-            },
-
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
+        
     </script>
 </body>
 
