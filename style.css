@@ -96,18 +96,54 @@ body{
 }
 
 #message{
-    margin-top: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 255px;
     width: 100%;
     flex: 0 0 auto;
 }
-#message h1{
-    color: white;
+
+#message .vegetacao{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-#message p{
-    font-family: 'Open Sans', sans-serif;
-    color: beige;
+
+.vegetacao .rio{
+    height: 35vh;
+    border-radius: 10px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.vegetacao .textos{
+    background-color: #131313;
+    border-radius: 10px;
+    margin-left: 15%;
+    height: 52vh;
+    width: 70%;
+    margin-top: -18vh;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.textos p{
+    font-weight: 200;
+    padding-top: 5vh;
+}
+
+.textos .texto_left{
+    width: 30%;
+    color: rgb(234, 234, 234);
+    margin-top: 22vh;
+}
+.textos .texto_right{
+    width: 30%;
+    color: rgb(234, 234, 234);
+    margin-top: 22vh;
 }
 
 
