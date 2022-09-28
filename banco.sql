@@ -28,6 +28,6 @@ CREATE TABLE cadastro_ongs(
     img4 VARCHAR(100) NULL DEFAULT NULL
 );
 
-select * from cadastro;
+delete from cadastro where cpf='123456789';
 
 drop database site;
