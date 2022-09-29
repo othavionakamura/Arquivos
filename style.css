@@ -162,6 +162,10 @@ body{
     height: 50vh;
 }
 
+#ong .ong_acessar{
+    color: white;
+}
+
 
 footer {
     position: fixed;
