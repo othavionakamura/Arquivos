@@ -153,3 +153,232 @@ labels: ['1990','1991','1992','1993','1994','1995','1996','1997','1998','1999','
 
 data: [0.613, 0.621	, 0.627, 0.635	, 0.642, 0.651	, 0.658	, 0.665	, 0.670, 0.676	, 0.685, 0.691, 0.699	, 0.695	, 0.698, 0.700	, 0.702, 0.706, 0.717	, 0.719	, 0.727 , 0.731	,0.735, 0.753 , 0.756	,0.756 ,0.758	,0.761 ,0.762, 0.765, 0.754],
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    scroll-behavior: smooth;
+}
+:root{
+    --crl: #000000;
+}
+
+body{
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("bg2.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content{
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+#home{
+    width: 100%;
+    margin-top: 30px;
+    flex: 0 0 auto;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home .cima{
+    width: 100%;
+    margin-top: 130px;
+    text-align: center;
+}
+
+#home .cima .escolha{
+    font-size: 30px;
+    margin-left: -220px;
+    color: white;
+    letter-spacing: 7px;
+    line-height: 130px;
+    text-transform: uppercase;
+}
+#home .cima .regiao{
+    text-transform: uppercase;
+    color: white;
+    font-size: 130px;
+    letter-spacing: 10px;
+    line-height: 20px;
+}
+
+#home .baixo{
+    top: 200px;
+}
+
+
+#profile{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 auto;
+    animation: fade 1s ease-in alternate;
+}
+
+#profile .left{
+    width: 40%;
+}
+
+#profile .right{
+    width: 40%;
+    margin-top: 15vh;
+}
+
+#profile h1{
+    color: white;
+    font-size: 80px;
+}
+#profile p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#message{
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+#message .vegetacao{
+    margin-top: 20vh;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.vegetacao .rio{
+    height: 30vh;
+    border-radius: 10px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.vegetacao .textos{
+    background-color: #131313;
+    border-radius: 10px;
+    margin-left: 15%;
+    height: 58vh;
+    width: 70%;
+    margin-top: -18vh;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.textos p{
+    font-weight: 200;
+    padding-top: 5vh;
+}
+
+.textos .texto_left{
+    width: 30%;
+    color: rgb(234, 234, 234);
+    margin-top: 22vh;
+}
+.textos .texto_right{
+    width: 30%;
+    color: rgb(234, 234, 234);
+    margin-top: 22vh;
+}
+
+#ong{
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+#ong .ong_content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#ong .ong_content img{
+    height: 50vh;
+}
+
+
+footer {
+    position: fixed;
+    bottom: -4vh;
+    left: 0;
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 70px;    
+    line-height: 3vh;
+    text-align: center;
+    transition: .5s all ease-in-out;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: center;
+    margin-left: -35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    padding-right: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer .links{
+    background-color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    opacity: 75%;
+    transition: .3s;
+}
+
+footer a::after{
+    content: '|';
+    padding-left: 10px;
+}
+
+footer a:last-child::after{
+    content: '';
+}
+
+footer a:last-child{
+    content: none;
+    padding-right: 0;
+}
+
+footer:hover{
+    cursor: pointer;
+    bottom: 0;
+}
