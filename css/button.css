@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;800&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -83,4 +85,10 @@ button:hover .circle .icon.arrow {
 }
 button:hover .button-text {
   color: #282936;
+}
+
+.list_login{
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
 }
