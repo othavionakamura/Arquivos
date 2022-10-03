@@ -4,7 +4,7 @@ USE site;
 
 CREATE TABLE cadastro(
 	cpf varchar(11) NOT NULL PRIMARY KEY,
-    foto_perfil varchar(40) NULL DEFAULT NULL,
+   foto_perfil varchar(40) NULL DEFAULT NULL,
 	nome VARCHAR(42) NULL DEFAULT NULL,
 	telefone VARCHAR(42) NULL DEFAULT NULL,
 	email VARCHAR (50) NULL DEFAULT NULL

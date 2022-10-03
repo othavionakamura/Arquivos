@@ -58,7 +58,10 @@
             $stmt = $pdo -> query('SELECT * FROM site . cadastro;');
             
             while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){
-                echo "<img src='images/{$linha['foto_perfil']}' class='img'>{$linha['nome']}<br>";
+                echo "<img src='images/{$linha['foto_perfil']}' class='img'>
+                    <h1>{$linha['nome']}</h1>
+                    <p>{$linha['telefone']}</p>
+                    <p>{$linha['email']}</p>";
             }
         }
 
