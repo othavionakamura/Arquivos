@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="swiper mySwiper container_carrossel">
+        <div class="swiper-wrapper">
+            <div id="swiper-slide message">
+                <div class="vegetacao">
+                    <img src="../img/rio.jpg" class="rio">
+                    <div class="textos">
+                        <div class="texto_left">
+                            <h2>Experiências fascinantes</h2>
+                            <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                        </div>
+                        <div class="texto_right">
+                            <h2>Experiências fascinantes</h2>
+                            <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="swiper-slide message">
+                <div class="vegetacao">
+                    <img src="../img/rio.jpg" class="rio">
+                    <div class="textos">
+                        <div class="texto_left">
+                            <h2>Experiências fascinantes</h2>
+                            <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                        </div>
+                        <div class="texto_right">
+                            <h2>Experiências fascinantes</h2>
+                            <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="swiper-slide message">
+                <div class="vegetacao">
+                    <img src="../img/rio.jpg" class="rio">
+                    <div class="textos">
+                        <div class="texto_left">
+                            <h2>Experiências fascinantes</h2>
+                            <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                        </div>
+                        <div class="texto_right">
+                            <h2>Experiências fascinantes</h2>
+                            <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>

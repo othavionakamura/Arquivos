@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/card.css">
     <link rel="stylesheet" href="../css/grafico.css">
+    <link rel="stylesheet" href="../css/carrossel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>InfoZuca</title>
     <link rel="icon" type="image/jpg" href="../img/64673.png" />
@@ -284,21 +285,58 @@
             </div>
         </div>
 
-        <div id="message">
-            <div class="vegetacao">
-                <img src="../img/rio.jpg" class="rio">
-                <div class="textos">
-                    <div class="texto_left">
-                        <h2>Experiências fascinantes</h2>
-                        <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+        <div class="swiper mySwiper container_carrossel">
+            <div class="swiper-wrapper">
+                <div id="swiper-slide message">
+                    <div class="vegetacao">
+                        <img src="../img/rio.jpg" class="rio">
+                        <div class="textos">
+                            <div class="texto_left">
+                                <h2>Experiências fascinantes</h2>
+                                <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                            </div>
+                            <div class="texto_right">
+                                <h2>Experiências fascinantes</h2>
+                                <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="texto_right">
-                        <h2>Experiências fascinantes</h2>
-                        <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                </div>
+
+                <div id="swiper-slide message">
+                    <div class="vegetacao">
+                        <img src="../img/rio.jpg" class="rio">
+                        <div class="textos">
+                            <div class="texto_left">
+                                <h2>Experiências fascinantes</h2>
+                                <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                            </div>
+                            <div class="texto_right">
+                                <h2>Experiências fascinantes</h2>
+                                <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="swiper-slide message">
+                    <div class="vegetacao">
+                        <img src="../img/rio.jpg" class="rio">
+                        <div class="textos">
+                            <div class="texto_left">
+                                <h2>Experiências fascinantes</h2>
+                                <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                            </div>
+                            <div class="texto_right">
+                                <h2>Experiências fascinantes</h2>
+                                <p>Pensando nos usuários, idealizamos experiências digitais que vão desde a ideia até o último detalhe do design.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         <div id="ong">
             <div class="ong_content">
@@ -327,8 +365,22 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script>
-        
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
     </script>
 </body>
 
