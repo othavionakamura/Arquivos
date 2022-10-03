@@ -52,6 +52,56 @@
     </style>
 </head>
 <body>
+
+
+    <div id="content">
+        <div class="card">
+            <img src='images/2022.09.09-13.57.48.png' class='img'>
+            <div class="conteudo">
+                <h2>João</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Phasellus aliquet lectus ac tristique posuere. Praesent a 
+                tellus elementum, interdum libero in, tristique lectus. 
+                Maecenas efficitur, urna sit amet laoreet interdum.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src='images/2022.09.09-13.57.48.png' class='img'>
+            <div class="conteudo">
+                <h2>João</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Phasellus aliquet lectus ac tristique posuere. Praesent a 
+                tellus elementum, interdum libero in, tristique lectus. 
+                Maecenas efficitur, urna sit amet laoreet interdum.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src='images/2022.09.09-13.57.48.png' class='img'>
+            <div class="conteudo">
+                <h2>João</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Phasellus aliquet lectus ac tristique posuere. Praesent a 
+                tellus elementum, interdum libero in, tristique lectus. 
+                Maecenas efficitur, urna sit amet laoreet interdum.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src='images/2022.09.09-13.57.48.png' class='img'>
+            <div class="conteudo">
+                <h2>João</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Phasellus aliquet lectus ac tristique posuere. Praesent a 
+                tellus elementum, interdum libero in, tristique lectus. 
+                Maecenas efficitur, urna sit amet laoreet interdum.</p>
+            </div>
+        </div>
+
+        
+    </div>
+
     <?php
         require ('conexão.php');
         try {
