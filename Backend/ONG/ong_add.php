@@ -23,7 +23,7 @@
         <input type="password" name="senha" placeholder="Senha:">
 
         <div align="left">
-            <button type="submit" class="btn btn-success">Enviar mãe</button>
+            <button type="submit" class="btn btn-success">Enviar</button>
         </div>
     </form>
 
@@ -50,8 +50,10 @@
 
         $b = $new_name;
         $c = $_POST['nome'];
-        $d = $_POST['email'];
-        $e = $_POST['senha'];
+        $d = $_POST['endereco'];
+        $e = $_POST['email'];
+        $f = $_POST['telefone'];
+        
         
         require('../conexao.php');
         
