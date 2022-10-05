@@ -23,6 +23,7 @@
 }
 
 .container{
+  z-index: 0;
   display: flex;
   padding-top: 4%;
   height: auto;
