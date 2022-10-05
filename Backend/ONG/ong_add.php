@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        input{
-            display: block;
-            margin: 20px;
-        }
-    </style>
-</head>
-<body>
-    <form method="POST" enctype="multipart/form-data">
-        <label for="conteudo">Foto de perfil:</label>
-        <input type="file" name="pic" accept="image/*" class="form-control">
-        <input type="text" name="nome" placeholder="Nome:">
-        <input type="text" name="endereco"  placeholder="Endereco:">
-        <input type="text" name="email"  placeholder="Email:">
-        <input type="text" name="telefone"  placeholder="Telefone:">
-        <input type="password" name="senha" placeholder="Senha:">
-        <input type="text" name="chave_pix" placeholder="PIX:">
-        <input type="file" name="img1" accept="image/*" class="form-control">
-        <input type="file" name="img2" accept="image/*" class="form-control">       
-        <input type="file" name="img3" accept="image/*" class="form-control">
-        <input type="file" name="img4" accept="image/*" class="form-control">
-
-        <div align="left">
-            <button type="submit" class="btn btn-success">Enviar</button>
-        </div>
-    </form>
-
-</body>
-</html>
 <?php
 
     if (!empty($_FILES['pic'])) {
@@ -45,7 +9,7 @@
     }
     if (!empty($_FILES['img1'])) {
         $ext = strtolower(substr($_FILES['img1']['name'], -4)); //Pegando extensão do arquivo
-        $new_name_img1 = "img1" . date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+        $new_name_img1 = date("Y.m.d-H.i.s") . "img1" . $ext; //Definindo um novo nome para o arquivo
         $aux = $new_name_img1;
         $dir = 'imagens_ong/';
         move_uploaded_file($_FILES['img1']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo

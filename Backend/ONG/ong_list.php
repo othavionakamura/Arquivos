@@ -70,8 +70,7 @@
                       <div class='conteudo'>
                         <h2>{$linha['nome']}</h2>
                         <p>Chave do Pix: {$linha['chave_pix']}</p>
-                        <img src='imagens_ong/img1{$linha['img3']}' class='img1'>
-                        <img src='imagens_ong/img2{$linha['img3']}' class='img1'>
+                        <img src='imagens_ong/{$linha['img1']}' class='img1'>
                       </div>
                       </div>";
             }
