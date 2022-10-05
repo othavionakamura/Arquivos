@@ -56,11 +56,11 @@
     
     
     <?php
-        require ('conexão.php');
+        require ('conexao.php');
 
     
         try {
-            $stmt = $pdo -> query('SELECT * FROM site . cadastro;');
+            $stmt = $pdo -> query('SELECT * FROM site . cadastro_usuario;');
 
             echo "<div id='content'>";
             
@@ -69,8 +69,7 @@
                         <img src='images/{$linha['foto_perfil']}' class='img'>
                       <div class='conteudo'>
                         <h2>{$linha['nome']}</h2>
-                        <p>{$linha['telefone']}</p>
-                        <p>{$linha['cpf']}</p>
+                        <p>{$linha['email']}</p>
                       </div>
                       </div>";
             }

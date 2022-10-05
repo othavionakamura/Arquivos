@@ -14,15 +14,16 @@
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data">
-        <label for="conteudo">Enviar imagem:</label>
+        <label for="conteudo">Foto de perfil:</label>
         <input type="file" name="pic" accept="image/*" class="form-control">
-        <input type="text" name="cpf" placeholder="CPF:">
         <input type="text" name="nome" placeholder="Nome:">
-        <input type="text" name="telefone" placeholder="Tel:">
-        <input type="text" name="email" placeholder="Email:">
+        <input type="text" name="endereco"  placeholder="Endereco:">
+        <input type="text" name="email"  placeholder="Email:">
+        <input type="text" name="telefone"  placeholder="Telefone:">
+        <input type="password" name="senha" placeholder="Senha:">
 
         <div align="left">
-            <button type="submit" class="btn btn-success">Enviar imagem</button>
+            <button type="submit" class="btn btn-success">Enviar mãe</button>
         </div>
     </form>
 
@@ -34,33 +35,31 @@
         $ext = strtolower(substr($_FILES['pic']['name'], -4)); //Pegando extensão do arquivo
         $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
         $aux = $new_name;
-        $dir = 'images/';
+        $dir = '../images/';
 
         move_uploaded_file($_FILES['pic']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
         echo '<div class="alert alert-success" role="alert" align="center">
-            <img src="images/' . "$aux" . '" class="img img-responsive img-thumbnail" width="200"> 
+            <img src="..imagens_ong' . "$aux" . '" class="img img-responsive img-thumbnail" width="200"> 
             <br>
             Imagem enviada com sucesso!
             <br>
             </div>';
     }
     
-    if(isset($_POST['cpf'])){
+    if(isset($_POST['nome'])){
 
-        $a = $_POST['cpf'];
         $b = $new_name;
         $c = $_POST['nome'];
-        $d = $_POST['telefone'];
-        $e = $_POST['email'];
+        $d = $_POST['email'];
+        $e = $_POST['senha'];
         
-        require('conexão.php');
+        require('../conexao.php');
         
         try {
             
-            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro` VALUES (:cpf, :foto_perfil, :nome, :telefone, :email)');
+            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :telefone, :email)');
             
             $stmt->execute(array(
-                ':cpf' => $a,
                 ':foto_perfil' => $b,
                 ':nome' => $c,
                 ':telefone' => $d,
