@@ -1,39 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enviado com sucesso!
+</body>
+</html>
 <?php
 
-    if (!empty($_FILES['pic'])) {
+    if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['pic']['name'], -4)); //Pegando extensão do arquivo
         $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-        $aux = $new_name;
         $dir = '../images/';
         move_uploaded_file($_FILES['pic']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
     }
-    if (!empty($_FILES['img1'])) {
+    if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['img1']['name'], -4)); //Pegando extensão do arquivo
         $new_name_img1 = date("Y.m.d-H.i.s") . "img1" . $ext; //Definindo um novo nome para o arquivo
-        $aux = $new_name_img1;
         $dir = 'imagens_ong/';
-        move_uploaded_file($_FILES['img1']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
+        move_uploaded_file($_FILES['img1']['tmp_name'], $dir . $new_name_img1); //Fazer upload do arquivo
     }
-    if (!empty($_FILES['img2'])) {
+    if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['img2']['name'], -4)); //Pegando extensão do arquivo
-        $new_name_img2 = "img2" . date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-        $aux = $new_name_img2;
+        $new_name_img2 = date("Y.m.d-H.i.s") . "img2" . $ext; //Definindo um novo nome para o arquivo
         $dir = 'imagens_ong/';
-        move_uploaded_file($_FILES['img2']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
+        move_uploaded_file($_FILES['img2']['tmp_name'], $dir . $new_name_img2); //Fazer upload do arquivo
     }
-    if (!empty($_FILES['img3'])) {
+    if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['img3']['name'], -4)); //Pegando extensão do arquivo
-        $new_name_img3 = "img3" . date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-        $aux = $new_name_img3;
+        $new_name_img3 = date("Y.m.d-H.i.s") . "img3" . $ext; //Definindo um novo nome para o arquivo
         $dir = 'imagens_ong/';
-        move_uploaded_file($_FILES['img1']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
+        move_uploaded_file($_FILES['img1']['tmp_name'], $dir . $new_name_img3); //Fazer upload do arquivo
     }
-    if (!empty($_FILES['img4'])) {
+    if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['img4']['name'], -4)); //Pegando extensão do arquivo
-        $new_name_img4 = "img4" . date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-        $aux = $new_name_img4;
+        $new_name_img4 = date("Y.m.d-H.i.s") . "img4" . $ext; //Definindo um novo nome para o arquivo
         $dir = 'imagens_ong/';
-        move_uploaded_file($_FILES['img4']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
+        move_uploaded_file($_FILES['img4']['tmp_name'], $dir . $new_name_img4); //Fazer upload do arquivo
     }
     
     
