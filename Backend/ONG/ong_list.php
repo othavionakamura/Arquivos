@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todas as ONGs</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
         *{
             margin: 0;
             padding: 0;
@@ -15,23 +17,23 @@
             width: 90%;
             flex-wrap: wrap;
             position: relative;
-            left: 8%;
+            left: 5%;
+            justify-content: space-around;
         }
         .card{
             text-align: center;
             align-items: center;
             justify-content: center;
-            padding: 20px;
         }
 
-        .img{
+        .card .img{
             height: 150px;
             width: 150px;
             background-color: white;
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
-            position: relative;
+            position: absolute;
             z-index: 1;
         }
         
@@ -41,13 +43,18 @@
             height: 300px;
             width: 350px;
             position: relative;
-            top: -18%;
+            top: 8vh;
             z-index: 0;
-            border-radius: 30px;
+            border-radius: 20px;
         }
 
         .conteudo h2{
-            padding-top: 25%;
+            padding-top: 30%;
+        }
+
+        a{
+            color: black;
+            font-family: 'Open Sans', sans-serif;
         }
     </style>
 </head>
@@ -65,14 +72,19 @@
             echo "<div id='content'>";
             
             while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){
-                echo "<div class='card'>
-                        <img src='imagens_ong/{$linha['foto_pefil']}' class='img'>
-                      <div class='conteudo'>
-                        <h2>{$linha['nome']}</h2>
-                        <p>Chave do Pix: {$linha['chave_pix']}</p>
-                        <img src='imagens_ong/{$linha['img1']}' class='img1'>
-                      </div>
-                      </div>";
+                echo "<a href='https:www.youtube.com'>
+
+                        <div class='card'>
+                            <img src='imagens_ong_perfil/{$linha['foto_pefil']}' class='img'>
+
+                            <div class='conteudo'>
+                                <h2>{$linha['nome']}</h2>
+                                <p>Chave do Pix: {$linha['chave_pix']}</p>
+                            </div>
+
+                        </div>
+
+                      </a>";
             }
             
             echo "</div>";

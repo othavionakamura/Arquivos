@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página ONG</title>
     <style>
         *{
             margin: 0;
@@ -60,12 +60,16 @@
 
     
         try {
-            $stmt = $pdo -> query('SELECT * FROM site . cadastro_ongs;');
+            $stmt = $pdo -> query('SELECT * FROM site . cadastro_ongs where id=2;');
 
             echo "<div id='content'>";
             
             while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){
-                echo "<img src='../images/{$linha['foto_pefil']}'>
+
+                echo "
+                    
+                    <div id='content'>
+                        <img src='imagens_ong_perfil/{$linha['foto_pefil']}'>
                       <img src='imagens_ong/{$linha['img1']}'>
                       <img src='imagens_ong/{$linha['img2']}'>
                       <img src='imagens_ong/{$linha['img3']}'>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enviado</title>
 </head>
 <body>
     Enviado com sucesso!
@@ -15,7 +15,7 @@
     if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['pic']['name'], -4)); //Pegando extensão do arquivo
         $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-        $dir = '../images/';
+        $dir = 'imagens_ong_perfil/';
         move_uploaded_file($_FILES['pic']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
     }
     if (isset($_FILES['pic'])) {
@@ -34,7 +34,7 @@
         $ext = strtolower(substr($_FILES['img3']['name'], -4)); //Pegando extensão do arquivo
         $new_name_img3 = date("Y.m.d-H.i.s") . "img3" . $ext; //Definindo um novo nome para o arquivo
         $dir = 'imagens_ong/';
-        move_uploaded_file($_FILES['img1']['tmp_name'], $dir . $new_name_img3); //Fazer upload do arquivo
+        move_uploaded_file($_FILES['img3']['tmp_name'], $dir . $new_name_img3); //Fazer upload do arquivo
     }
     if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['img4']['name'], -4)); //Pegando extensão do arquivo
