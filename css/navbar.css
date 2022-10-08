@@ -72,7 +72,7 @@ nav{
     transform: translateY(-20px);
 }
 
-.navigation ul li.active:active #home{
+.navigation ul li.active:active #inicio{
     animation: fade 2s alternate;
 }
 
