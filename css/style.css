@@ -40,9 +40,11 @@ body{
 
 #inicio .cima .escolha{
     font-size: 30px;
-    margin-left: -220px;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: -14%;
     color: white;
-    letter-spacing: 7px;
+    letter-spacing: .3em;
     line-height: 130px;
     text-transform: uppercase;
 }
