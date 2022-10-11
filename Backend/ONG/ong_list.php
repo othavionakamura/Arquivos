@@ -14,16 +14,10 @@
         }
         #content{
             display: flex;
-            width: 90%;
+            width: 100%;
             flex-wrap: wrap;
-            position: relative;
-            left: 5%;
+            position: absolute;
             justify-content: space-around;
-        }
-        .card{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
         }
 
         .card .img{
@@ -31,19 +25,22 @@
             width: 150px;
             background-color: white;
             border-radius: 50%;
+            border: 6px solid #fff;
             object-fit: cover;
             object-position: center;
-            position: absolute;
+            position: relative;
+            left: 10%;
             z-index: 1;
         }
         
         .conteudo{
-            background-color: orange;
+            background-color: #2e2e2e;
             text-align: center;
+            color: white;
             height: 300px;
             width: 350px;
             position: relative;
-            top: 8vh;
+            top: -12vh;
             z-index: 0;
             border-radius: 20px;
         }

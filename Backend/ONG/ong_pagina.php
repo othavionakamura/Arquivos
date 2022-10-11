@@ -12,43 +12,33 @@
         }
         #content{
             display: flex;
-            width: 90%;
+            width: 100%;
             flex-wrap: wrap;
-            position: relative;
-            left: 8%;
-        }
-        .card{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+            position: absolute;
         }
 
         .img{
-            height: 150px;
-            width: 150px;
+            height: 30vh;
+            width: 15%;
+            border-radius: 50px;
+            object-fit: cover;
+            object-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .imgs{
+            height: 50vh;
+            width: 40%;
             background-color: white;
-            border-radius: 50%;
+            border-radius: 10px;
             object-fit: cover;
             object-position: center;
             position: relative;
             z-index: 1;
         }
         
-        .conteudo{
-            background-color: orange;
-            text-align: center;
-            height: 300px;
-            width: 350px;
-            position: relative;
-            top: -18%;
-            z-index: 0;
-            border-radius: 30px;
-        }
 
-        .conteudo h2{
-            padding-top: 25%;
-        }
     </style>
 </head>
 <body>
@@ -69,11 +59,16 @@
                 echo "
                     
                     <div id='content'>
-                        <img src='imagens_ong_perfil/{$linha['foto_pefil']}'>
-                      <img src='imagens_ong/{$linha['img1']}'>
-                      <img src='imagens_ong/{$linha['img2']}'>
-                      <img src='imagens_ong/{$linha['img3']}'>
-                      <img src='imagens_ong/{$linha['img4']}'>";
+                        
+                        <img src='imagens_ong_perfil/{$linha['foto_pefil']}' class=img>
+                        <h2>{$linha['nome']}</h2>
+
+
+
+                        <img src='imagens_ong/{$linha['img1']}' class=imgs>
+                        <img src='imagens_ong/{$linha['img2']}' class=imgs>
+                        <img src='imagens_ong/{$linha['img3']}' class=imgs>
+                        <img src='imagens_ong/{$linha['img4']}' class=imgs>";
             }
             
             echo "</div>";
