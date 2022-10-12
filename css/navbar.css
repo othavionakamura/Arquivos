@@ -47,8 +47,8 @@ nav{
 .navigation ul li a .icon{
      position: relative;
      display: block;
-     line-height: 130px;
-     font-size: 1.8em;
+     line-height: 120px;
+     font-size: 1.6em;
      text-align: center;
      transition: 0.5s;
      color: white;
@@ -87,7 +87,7 @@ nav{
 
 .indicator{
     position: absolute;
-    top: 125%;
+    top: 119%;
     left: 7.4%;
     width: 70px;
     height: 1px;
