@@ -251,15 +251,22 @@ footer:hover{
 
     #inicio .cima .escolha{
         font-size: 25px;
-        font-style: italic;
-        font-weight: 600;
         margin-left: -16%;
-        color: white;
-        letter-spacing: .3em;
         line-height: 110px;
-        text-transform: uppercase;
     }
     #inicio .cima .regiao{
         font-size: 110px;
+    }
+
+    #economia{
+        padding-top: 10vh;    
+    }
+    #economia h1{
+        color: white;
+        font-size: 3em;
+    }
+    #economia p{
+        font-size: 1em;
+        font-weight: 200;
     }
 }
