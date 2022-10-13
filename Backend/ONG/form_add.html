@@ -15,21 +15,53 @@
             display: block;
             margin: 1vh;
         }
+        #pic{
+            display: none;
+        }
+
+        .img_perfil img{
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 10%;
+        }
+
+        .img_perfil img:hover{
+            cursor: pointer;
+            transform: scale(105%);
+        }
+
+        .imagens{
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data" action="ong_add.php">
-        <input type="file" name="pic" accept="image/*" class="form-control">
+        <label class="img_perfil">
+            <img src="imagens_ong/2022.10.07-12.19.02img2.jpg" alt="Perfil">
+            <input type="file" name="pic" id="pic" accept="image/*" class="form-control">
+        </label>
+    
         <input type="text" name="nome" placeholder="Nome:">
         <input type="text" name="endereco"  placeholder="Endereco:">
         <input type="text" name="email"  placeholder="Email:">
         <input type="text" name="telefone"  placeholder="Telefone:">
         <input type="password" name="senha" placeholder="Senha:">
         <input type="text" name="chave_pix" placeholder="PIX:">
-        <input type="file" name="img1" accept="image/*" class="form-control">
-        <input type="file" name="img2" accept="image/*" class="form-control">       
-        <input type="file" name="img3" accept="image/*" class="form-control">
-        <input type="file" name="img4" accept="image/*" class="form-control">
+
+        <div class="imagens">
+            <label for="" class="img1">
+                <input type="file" name="img1" accept="image/*" class="form-control">
+            </label>
+            <label for="">
+                <input type="file" name="img2" accept="image/*" class="form-control">       
+            </label>
+                <input type="file" name="img3" accept="image/*" class="form-control">
+            <input type="file" name="img4" accept="image/*" class="form-control">
+        </div>
         
         <button type="submit" class="btn btn-success">Enviar</button>
     </form>
