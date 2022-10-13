@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     scroll-behavior: smooth;
@@ -229,4 +228,38 @@ footer a:last-child{
 footer:hover{
     cursor: pointer;
     bottom: 0;
+}
+
+
+
+
+@media screen and (max-height: 660px ) {
+    footer {
+        bottom: -6vh;
+    }
+
+    footer:hover{
+        cursor: pointer;
+        bottom: -2vh;
+    }
+
+
+    #inicio .cima{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    #inicio .cima .escolha{
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 600;
+        margin-left: -16%;
+        color: white;
+        letter-spacing: .3em;
+        line-height: 110px;
+        text-transform: uppercase;
+    }
+    #inicio .cima .regiao{
+        font-size: 110px;
+    }
 }
