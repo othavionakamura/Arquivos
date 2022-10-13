@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --crl: #000000;
 }
 
-body{
+body {
     justify-content: center;
     background-image: url("../img/bg2.png");
     background-size: 100%;
@@ -19,7 +20,7 @@ body{
     overflow-x: hidden;
 }
 
-#inicio{
+#inicio {
     width: 100%;
     height: 100vh;
     margin-top: 30px;
@@ -31,13 +32,13 @@ body{
 }
 
 
-#inicio .cima{
+#inicio .cima {
     width: 100%;
     margin-top: 130px;
     text-align: center;
 }
 
-#inicio .cima .escolha{
+#inicio .cima .escolha {
     font-size: 30px;
     font-style: italic;
     font-weight: 600;
@@ -47,7 +48,8 @@ body{
     line-height: 130px;
     text-transform: uppercase;
 }
-#inicio .cima .regiao{
+
+#inicio .cima .regiao {
     text-transform: uppercase;
     color: white;
     font-size: 130px;
@@ -55,12 +57,12 @@ body{
     line-height: 20px;
 }
 
-#inicio .baixo{
+#inicio .baixo {
     top: 200px;
 }
 
 
-#economia{
+#economia {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -71,26 +73,27 @@ body{
     animation: fade 1s ease-in alternate;
 }
 
-#economia .left{
+#economia .left {
     width: 40%;
 }
 
-#economia .right{
+#economia .right {
     width: 40%;
 }
 
-#economia h1{
+#economia h1 {
     color: white;
     font-size: 80px;
 }
-#economia p{
+
+#economia p {
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 20px;
     font-weight: 400;
 }
 
-#pontos{
+#pontos {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -98,10 +101,150 @@ body{
     align-items: center;
 }
 
-#pontos .vegetacao{
+#slider {
+    position: relative;
+    width: 60%;
+    height: 30vw;
+    margin: 80px auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    perspective: 1900px;
+    transform-style: preserve-3d;
+}
+
+#pontos input[type=radio] {
+    display: inline;
+    position: relative;
+    top: 108%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 15px 0 0;
+    opacity: 0.8;
+    transform: translateX(-83px);
+    cursor: pointer;
+}
+
+
+#pontos input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+}
+
+#pontos input[type=radio]:checked {
+    opacity: 1;
+}
+
+
+
+
+#slider label {
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    margin-top: 38vh;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+}
+
+/*#slide1 {
+  background: tomato;
+}
+
+#slide2 {
+  background: yellowgreen;
+}
+
+#slide3 {
+  background: dodgerblue;
+}
+
+#slide4 {
+  background: slateblue;
+}
+
+#slide5 {
+  background: violet;
+}*/
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0), 0 12px 6px rgba(0, 0, 0, 0);
+    transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0), 0 2px 2px rgba(0, 0, 0, 0);
+    transform: translate3d(15%, 0, -100px);
+}
+
+
+/* Next to Next Slide */
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    transform: translate3d(30%, 0, -250px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    transform: translate3d(-30%, 0, -250px);
+}
+
+/* Previous Slide */
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0), 0 2px 2px rgba(0, 0, 0, 0);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vegetacao {
+    width: 100%;
+    height: 61.5vh;
     display: block;
     flex-direction: row;
     justify-content: center;
@@ -109,48 +252,55 @@ body{
     text-align: center;
 }
 
-.vegetacao .rio{
+.vegetacao .rio {
     height: 30vh;
     border-radius: 10px;
-    width: 50%;
+    width: 80%;
     object-fit: cover;
 }
 
-.vegetacao .textos{
+.vegetacao .textos {
     background-color: rgba(26, 26, 26, 1);
-    border-radius: 10px;
-    margin-left: 15%;
-    height: 58vh;
-    width: 70%;
+    border-radius: 5px;
+    height: 47vh;
+    width: 100%;
     margin-top: -18vh;
     display: flex;
     text-align: left;
     justify-content: space-around;
 }
 
-.textos p{
+.textos h2 {
+    font-size: 10px;
     font-weight: 200;
     padding-top: 5vh;
 }
 
-.textos .texto_left{
-    width: 30%;
-    color: rgb(234, 234, 234);
-    margin-top: 22vh;
+.textos p {
+    font-size: 10px;
+    font-weight: 200;
+    padding-top: 5vh;
 }
-.textos .texto_right{
+
+.textos .texto_left {
     width: 30%;
     color: rgb(234, 234, 234);
     margin-top: 22vh;
 }
 
-#ong{
+.textos .texto_right {
+    width: 30%;
+    color: rgb(234, 234, 234);
+    margin-top: 22vh;
+}
+
+#ong {
     width: 100%;
     height: 100vh;
     flex: 0 0 auto;
 }
 
-#ong .ong_content{
+#ong .ong_content {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -160,11 +310,11 @@ body{
     text-align: center;
 }
 
-#ong .ong_content img{
+#ong .ong_content img {
     height: 50vh;
 }
 
-#ong .ong_acessar{
+#ong .ong_acessar {
     color: white;
 }
 
@@ -175,13 +325,13 @@ footer {
     left: 0;
     color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    height: 70px;    
+    height: 70px;
     line-height: 3vh;
     text-align: center;
     transition: .5s all ease-in-out;
 }
 
-footer p{
+footer p {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 200;
@@ -191,7 +341,7 @@ footer p{
     margin-bottom: 5px;
 }
 
-footer a{
+footer a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     padding-right: 10px;
@@ -199,33 +349,33 @@ footer a{
     text-decoration: none;
 }
 
-footer .links{
+footer .links {
     background-color: #000000;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
     opacity: 75%;
     transition: .3s;
 }
 
-footer a::after{
+footer a::after {
     content: '|';
     padding-left: 10px;
 }
 
-footer a:last-child::after{
+footer a:last-child::after {
     content: '';
 }
 
-footer a:last-child{
+footer a:last-child {
     content: none;
     padding-right: 0;
 }
 
-footer:hover{
+footer:hover {
     cursor: pointer;
     bottom: 0;
 }
@@ -233,39 +383,42 @@ footer:hover{
 
 
 
-@media screen and (max-height: 660px ) {
+@media screen and (max-height: 660px) {
     footer {
         bottom: -6vh;
     }
 
-    footer:hover{
+    footer:hover {
         cursor: pointer;
         bottom: -2vh;
     }
 
 
-    #inicio .cima{
+    #inicio .cima {
         width: 100%;
         margin-top: 100px;
     }
 
-    #inicio .cima .escolha{
+    #inicio .cima .escolha {
         font-size: 25px;
         margin-left: -16%;
         line-height: 110px;
     }
-    #inicio .cima .regiao{
+
+    #inicio .cima .regiao {
         font-size: 110px;
     }
 
-    #economia{
-        padding-top: 10vh;    
+    #economia {
+        padding-top: 10vh;
     }
-    #economia h1{
+
+    #economia h1 {
         color: white;
         font-size: 3em;
     }
-    #economia p{
+
+    #economia p {
         font-size: 1em;
         font-weight: 200;
     }

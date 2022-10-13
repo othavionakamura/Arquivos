@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro ONG</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        .informacoes{
+            margin: 1%;
+        }
+
         input{
             display: block;
-            margin: 1vh;
+            margin:  4vh;
         }
-        #pic{
+
+        input[type=text], input[type=password]{
+            border-radius: 50px;
+            border: solid 1px rgb(70, 70, 70);
+            padding: 7px 10px 7px 20px;
+            font-family: 'Poppins' sans-serif;
+            font-size: 15px;
+        }
+
+        input[type=text], input[type=password]:focus{
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        }
+
+        input[type=file]{
             display: none;
         }
 
@@ -25,7 +46,8 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            object-position: 10%;
+            object-position: center;
+            border: solid 1px #000;
         }
 
         .img_perfil img:hover{
@@ -35,32 +57,67 @@
 
         .imagens{
             display: flex;
+            justify-content: space-around;
+        }
+
+        .label_imagens{
+            width: 20%;
+            height: 23vh;
+            border-radius: 8px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(212, 212, 212);
+            border: 1px dashed rgb(44, 44, 44);
+        }
+
+        .label_imagens:hover{
+            cursor: pointer;
+            transform: scale(105%);
+            border: solid 1px;
+            opacity: .8;
         }
     </style>
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data" action="ong_add.php">
-        <label class="img_perfil">
-            <img src="imagens_ong/2022.10.07-12.19.02img2.jpg" alt="Perfil">
-            <input type="file" name="pic" id="pic" accept="image/*" class="form-control">
-        </label>
-    
-        <input type="text" name="nome" placeholder="Nome:">
-        <input type="text" name="endereco"  placeholder="Endereco:">
-        <input type="text" name="email"  placeholder="Email:">
-        <input type="text" name="telefone"  placeholder="Telefone:">
-        <input type="password" name="senha" placeholder="Senha:">
-        <input type="text" name="chave_pix" placeholder="PIX:">
+        <div class="informacoes">
+            <label class="img_perfil">
+                <img src="boneco_perfil.jpg" alt="Perfil">
+                <input type="file" name="pic" id="pic" accept="image/*" class="form-control">
+            </label>
+        
+            <input type="text" name="nome" placeholder="Nome:" required>
+            <input type="text" name="endereco"  placeholder="Endereco:" required>
+            <input type="text" name="email"  placeholder="Email:" required>
+            <input type="text" name="telefone"  placeholder="Telefone:">
+            <input type="password" name="senha" placeholder="Senha:" required>
+            <input type="text" name="chave_pix" placeholder="PIX:">
+        </div>
+        
 
         <div class="imagens">
-            <label for="" class="img1">
+            <label for="" class="label_imagens">
+                <p>Adicionar imagem +</p>
                 <input type="file" name="img1" accept="image/*" class="form-control">
             </label>
-            <label for="">
+
+            <label for="" class="label_imagens">
+                <p>Adicionar imagem +</p>
                 <input type="file" name="img2" accept="image/*" class="form-control">       
             </label>
+            
+            <label for="" class="label_imagens">
+                <p>Adicionar imagem +</p>
                 <input type="file" name="img3" accept="image/*" class="form-control">
-            <input type="file" name="img4" accept="image/*" class="form-control">
+            </label>
+
+            <label for="" class="label_imagens">
+                <p>Adicionar imagem +</p>
+                <input type="file" name="img4" accept="image/*" class="form-control">
+            </label>
         </div>
         
         <button type="submit" class="btn btn-success">Enviar</button>
