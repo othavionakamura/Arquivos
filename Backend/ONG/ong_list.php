@@ -64,7 +64,7 @@
 
     
         try {
-            $stmt = $pdo -> query('SELECT * FROM site . cadastro_ongs;');
+            $stmt = $pdo -> query('SELECT * FROM site . cadastro_ongs where situacao=1;');
 
             echo "<div id='content'>";
             

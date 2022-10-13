@@ -63,7 +63,7 @@
         
         try {
             
-            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :endereco, :email, :telefone , :senha, :img1, :img2, :img3, :img4, :chave_pix)');
+            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :endereco, :email, :telefone , :senha, :img1, :img2, :img3, :img4, :chave_pix, 1)');
             
             $stmt->execute(array(
                 ':foto_perfil' => $a,
