@@ -27,6 +27,6 @@ CREATE TABLE cadastro_ongs(
 	situacao INT NULL DEFAULT null
 );
 
-
+SELECT * FROM cadastro_ongs;
 
 drop database site;
