@@ -8,6 +8,8 @@
 </head>
 <body>
     Enviado com sucesso!
+
+    <a href="../../html/index.html#ong">Voltar para página inicial</a>
 </body>
 </html>
 <?php
