@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" action="../../html/index.html" enctype="multipart/form-data">
         <label for="conteudo">Foto de perfil:</label>
         <input type="file" name="pic" accept="image/*" class="form-control">
         <input type="text" name="nome" placeholder="Nome:">
