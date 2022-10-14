@@ -231,17 +231,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .vegetacao {
     width: 100%;
     height: 61.5vh;
@@ -294,28 +283,9 @@ body {
     margin-top: 22vh;
 }
 
-#ong {
-    width: 100%;
-    height: 100vh;
-    flex: 0 0 auto;
-}
 
-#ong .ong_content {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-#ong .ong_content img {
-    height: 50vh;
-}
-
-#ong .ong_acessar {
-    color: white;
+#ong{
+    display: none;
 }
 
 

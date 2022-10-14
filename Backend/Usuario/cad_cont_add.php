@@ -18,50 +18,46 @@
         <input type="file" name="pic" accept="image/*" class="form-control">
         <input type="text" name="nome" placeholder="Nome:">
         <input type="text" name="email" placeholder="Email:">
-        <input type="password" name="senha" placeholder="Senha:">
+        <input type="text" name="cpf" placeholder="CPF:" id="cpf" autocomplete="off" maxlength="14" id >
+        <input type="password" name="senha" placeholder="Senha:" minlength="8">
 
         <div align="left">
             <button type="submit" class="btn btn-success">Enviar mãe</button>
         </div>
     </form>
 
-</body>
-</html>
+
 <?php
 
     if (isset($_FILES['pic'])) {
         $ext = strtolower(substr($_FILES['pic']['name'], -4)); //Pegando extensão do arquivo
         $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
         $aux = $new_name;
-        $dir = '../images/';
+        $dir = 'fotos_perfil_usu/';
 
         move_uploaded_file($_FILES['pic']['tmp_name'], $dir . $new_name); //Fazer upload do arquivo
-        echo '<div class="alert alert-success" role="alert" align="center">
-            <img src="../images/' . "$aux" . '" class="img img-responsive img-thumbnail" width="200"> 
-            <br>
-            Imagem enviada com sucesso!
-            <br>
-            </div>';
     }
     
     if(isset($_POST['nome'])){
 
-        $b = $new_name;
-        $c = $_POST['nome'];
-        $d = $_POST['email'];
+        $a = $new_name;
+        $b = $_POST['nome'];
+        $c = $_POST['email'];
+        $d = $_POST['cpf'];
         $e = $_POST['senha'];
         
         require('../conexao.php');
         
         try {
             
-            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_usuario` VALUES (null, :foto_perfil, :nome, :telefone, :email)');
+            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_usuario` VALUES (null, :foto_perfil, :nome, :email, :cpf, :senha)');
             
             $stmt->execute(array(
-                ':foto_perfil' => $b,
-                ':nome' => $c,
-                ':telefone' => $d,
-                ':email' => $e
+                ':foto_perfil' => $a,
+                ':nome' => $b,
+                ':email' => $c,
+                ':cpf' => $d,
+                ':senha' => $e
             ));
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
@@ -69,3 +65,7 @@
         }
     }
 ?>
+
+    <script src="cpf.js"></script>
+</body>
+</html>

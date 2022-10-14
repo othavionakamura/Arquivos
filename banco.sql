@@ -8,6 +8,7 @@ CREATE TABLE cadastro_usuario(
    foto_perfil varchar(40) NULL DEFAULT NULL,
 	nome VARCHAR(42) NULL DEFAULT NULL,
 	email VARCHAR (50) NULL DEFAULT NULL,
+	cpf VARCHAR (14) NULL DEFAULT NULL,
    senha varchar (40) NULL DEFAULT NULL
 );
 
@@ -28,5 +29,7 @@ CREATE TABLE cadastro_ongs(
 );
 
 SELECT * FROM cadastro_ongs;
+
+SELECT * FROM cadastro_usuario;
 
 drop database site;
