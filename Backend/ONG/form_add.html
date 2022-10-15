@@ -40,7 +40,7 @@
             display: none;
         }
 
-        .img_perfil img{
+        .img_perfil span{
             background-color: orange;
             width: 100px;
             height: 100px;
@@ -64,6 +64,7 @@
             width: 20%;
             height: 23vh;
             display: flex;
+            border-radius: 5px;
             text-align: center;
             align-items: center;
             justify-content: center;
@@ -102,13 +103,17 @@
         .picture_image2{
             max-width: 100%;
         }
+
+        .picture_image3{
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data" action="ong_add.php">
         <div class="informacoes">
             <label class="img_perfil" tabindex="0">
-                <img src="boneco_perfil.jpg" alt="Perfil">
+                <span class="picture_image_perfil">oi</span>
                 <input type="file" accept="image/*" name="pic" id="pic" class="form-control">
             </label>
         

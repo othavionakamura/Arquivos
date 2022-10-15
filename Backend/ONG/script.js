@@ -73,3 +73,49 @@ inputFile2.addEventListener('change', function (w) {
         pictureImage2.innerHTML = pictureImageTxt2;
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const inputFile3 = document.querySelector('#picture_input3');
+const pictureImage3 = document.querySelector('.picture_image3');
+const pictureImageTxt3 = 'Adicionar uma Imagem +';
+pictureImage3.innerHTML = pictureImageTxt3;
+
+inputFile3.addEventListener('change', function (t) {
+    const inputTarget3 = t.target;
+    const file3 = inputTarget3.files[0];
+
+    if (file3) {
+        const reader3 = new FileReader();
+
+        reader3.addEventListener('load', function (t) {
+            const readerTarget3 = t.target;
+
+            const img3 = document.createElement('img');
+            img3.src = readerTarget3.result;
+            img3.classList.add('picture_image3');
+
+            pictureImage3.innerHTML = '';
+
+            pictureImage3.appendChild(img3);
+        })
+
+        reader3.readAsDataURL(file3);
+    } else {
+        pictureImage3.innerHTML = pictureImageTxt3;
+    }
+})
