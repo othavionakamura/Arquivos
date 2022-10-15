@@ -109,14 +109,18 @@
         .picture_image3{
             max-width: 100%;
         }
+
+        .picture_image4{
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data" action="ong_add.php">
         <div class="informacoes">
             <label class="img_perfil" tabindex="0">
-                <span class="picture_image_perfil">oi</span>
-                <input type="file" accept="image/*" name="pic" id="pic" class="form-control">
+                <span class="picture_image_perfil"></span>
+                <input type="file" accept="image/*" name="pic" id="picture_input_perfil" class="form-control">
             </label>
         
             <input type="text" name="nome" placeholder="Nome:" required>
