@@ -63,30 +63,53 @@
         .label_imagens{
             width: 20%;
             height: 23vh;
-            border-radius: 8px;
             display: flex;
             text-align: center;
             align-items: center;
             justify-content: center;
             font-family: 'Poppins', sans-serif;
             background-color: rgb(212, 212, 212);
-            border: 1px dashed rgb(44, 44, 44);
+            border: 1px dashed currentColor;
+            color: rgb(71, 71, 71);
+            outline: none;
+            overflow: hidden;
+            transition: .3s ease-in-out;
         }
 
         .label_imagens:hover{
             cursor: pointer;
-            transform: scale(105%);
-            border: solid 1px;
-            opacity: .8;
+            color: rgb(21, 21, 21);
+            background-color: rgb(182, 182, 182);
+        }
+
+        .label_imagens:active{
+            color: rgb(221, 221, 221);
+            border: 2px solid rgb(221, 221, 221);
+            background-color: rgb(35, 35, 35);
+        }
+
+        .label_imagens:focus{
+            cursor: pointer;
+            color: rgb(21, 21, 21);
+            background-color: rgb(182, 182, 182);
+            box-shadow: 0 0 10px rgb(21, 21, 21);
+        }
+
+        .picture_image{
+            max-width: 100%;
+        }
+
+        .picture_image2{
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data" action="ong_add.php">
         <div class="informacoes">
-            <label class="img_perfil">
+            <label class="img_perfil" tabindex="0">
                 <img src="boneco_perfil.jpg" alt="Perfil">
-                <input type="file" name="pic" id="pic" accept="image/*" class="form-control">
+                <input type="file" accept="image/*" name="pic" id="pic" class="form-control">
             </label>
         
             <input type="text" name="nome" placeholder="Nome:" required>
@@ -97,30 +120,31 @@
             <input type="text" name="chave_pix" placeholder="PIX:">
         </div>
         
-
         <div class="imagens">
-            <label class="label_imagens">
-                <p>Adicionar imagem +</p>
-                <input type="file" name="img1" accept="image/*" class="form-control">
+            <label class="label_imagens" tabindex="0">
+                <span class="picture_image"></span>
+                <input type="file" name="img1" id="picture_input" accept="image/*" class="form-control">
             </label>
 
-            <label class="label_imagens">
-                <p>Adicionar imagem +</p>
-                <input type="file" name="img2" accept="image/*" class="form-control">       
+            <label class="label_imagens" tabindex="0">
+                <span class="picture_image2"></span>
+                <input type="file" name="img2" id="picture_input2" accept="image/*" class="form-control">
             </label>
             
-            <label class="label_imagens">
-                <p>Adicionar imagem +</p>
-                <input type="file" name="img3" accept="image/*" class="form-control">
+            <label class="label_imagens" tabindex="0">
+                <span class="picture_image3"></span>
+                <input type="file" name="img3" id="picture_input3" accept="image/*" class="form-control">
             </label>
 
-            <label class="label_imagens">
-                <p>Adicionar imagem +</p>
-                <input type="file" name="img4" accept="image/*" class="form-control">
+            <label class="label_imagens" tabindex="0">
+                <span class="picture_image4"></span>
+                <input type="file" name="img4" id="picture_input4" accept="image/*" class="form-control">
             </label>
         </div>
         
         <button type="submit" class="btn btn-success">Enviar</button>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>

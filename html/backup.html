@@ -395,3 +395,31 @@ footer:hover{
                 Imagem enviada com sucesso!
                 <br>
                 </div>';
+
+
+
+
+
+
+
+
+
+
+
+
+
+                const reader2 = new FileReader();
+
+        reader2.addEventListener('load', function (w) {
+            const readerTarget2 = w.target;
+
+            const img2 = document.createElement('img2');
+            img2.src = readerTarget2.result;
+            img2.classList.add('picture_image2');
+
+            pictureImage2.innerHTML = '';
+
+            pictureImage2.appendChild(img2);
+
+
+            pictureImage2.innerHTML = "Imagem Adicionada";
