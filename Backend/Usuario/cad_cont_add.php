@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <form method="POST" action="sucesso.html" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
         <label for="conteudo">Foto de perfil:</label>
         <input type="file" name="pic" accept="image/*" class="form-control">
         <input type="text" name="nome" placeholder="Nome:">
@@ -21,9 +21,7 @@
         <input type="text" name="cpf" placeholder="CPF:" id="cpf" autocomplete="off" maxlength="14" id >
         <input type="password" name="senha" placeholder="Senha:" minlength="8">
 
-        <div align="left">
-            <button type="submit" class="btn btn-success">Enviar mãe</button>
-        </div>
+        <button type="submit" class="btn btn-success">Enviar mãe</button>
     </form>
 
 
@@ -59,6 +57,9 @@
                 ':cpf' => $d,
                 ':senha' => $e
             ));
+
+            sleep(1);
+            echo "Cadastro efetuado com sucesso!";
 
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
