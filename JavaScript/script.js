@@ -1,17 +1,24 @@
 const list = document.querySelectorAll('.list');
+
 function activeLink() {
     list.forEach((item) =>
         item.classList.remove('active'));
     this.classList.add('active');
 }
-list.forEach((item) =>
-    item.addEventListener('click', activeLink));
+list.forEach((item) => item.addEventListener('click', activeLink));
 
 
-const botaoAnimar = document.getElementById("animar");
-const caixa = document.querySelector(".caixa");
 
-botaoAnimar.addEventListener("click", () => {
-    caixa.style.animation = "";
-    setTimeout(() => caixa.style.animation = "deslizar 1s linear", 5);
-});
+function changeBg(){
+    var navbar = document.getElementById('nav');
+    var scrollValue = window.scrollY;
+    console.log(scrollValue);
+    
+    if(scrollValue < 730){
+        navbar.classList.remove('bgColor');
+    } else {
+        navbar.classList.add('bgColor');
+    }
+}
+
+window.addEventListener('scroll', changeBg);

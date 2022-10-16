@@ -2,8 +2,8 @@ nav {
     position: fixed;
     display: flex;
     width: 100%;
-    height: 10vh;
-    top: 2%;
+    height: 15vh;
+    top: 0;
     justify-content: space-around;
     text-align: center;
     align-items: center;
@@ -15,14 +15,31 @@ nav {
     width: 600px;
     height: 10vh;
     display: flex;
+    top: -1vh;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+}
+
+.bgColor{
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+
+.bgColor .logo{
+    filter: invert();
+}
+
+.bgColor .navigation{
+    filter: invert();
+}
+
+.bgColor .btn_cad{
+    filter: invert();
 }
 
 .logo img {
     height: 15vh;
-    margin-top: 30px;
+    margin-top: 2vh;
 }
 
 .navigation ul {
@@ -76,22 +93,9 @@ nav {
 
 .navigation ul li.active a .text {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-3vh);
 }
 
-.navigation ul li.active:active #inicio {
-    animation: fade 2s alternate;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
 
 .indicator {
     position: absolute;
