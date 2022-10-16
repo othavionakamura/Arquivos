@@ -22,3 +22,18 @@ function changeBg(){
 }
 
 window.addEventListener('scroll', changeBg);
+
+
+
+const progressBar = document.getElementsByClassName('progress-bar')[0]
+
+setTimeout(function() {
+    console.log(
+        setInterval (() => {
+            const computedStyle = getComputedStyle(progressBar)
+            const width = parseFloat(computedStyle.getPropertyValue('--width')) || 10
+        
+            progressBar.style.setProperty('--width', width + .2)
+        }, 0)
+    )
+}, 1000)
