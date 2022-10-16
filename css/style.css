@@ -1,5 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
 
+:root{
+    --background: #f8f8f8;
+    --dark: #000;
+}
+
+#animacao{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box{
+    position: relative;
+    background-color: var(--dark);
+    border: solid 0.25rem var(--dark);
+    height: 50rem;
+    width: 50rem;
+    outline: 0;
+    overflow: none;
+}
+
+.box::before{
+    content: '';
+    background-image: url(/html/logo_preenchida_branco.png);
+    background-position: center;
+    background-size: 81.5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    background-color: black;
+    height: 200%;
+    width: 200%;
+    border-radius: 45%;
+    animation: spin 12s ease-in-out forwards;
+}
+
+
+@keyframes spin {
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-200%) rotate(500deg);
+    }
+}
+
+
+
+
+#animacao img{
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
