@@ -37,6 +37,10 @@ nav {
     filter: invert();
 }
 
+.bgColor .menu_ham{
+    filter: invert();
+}
+
 .logo img {
     height: 15vh;
     margin-top: 2vh;
