@@ -69,7 +69,7 @@
             echo "<div id='content'>";
             
             while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){
-                echo "<a href='https:www.youtube.com'>
+                echo "<a href='detalhes_ong.php?id={$linha['id']}'>
 
                         <div class='card'>
                             <img src='imagens_ong_perfil/{$linha['foto_pefil']}' class='img'>

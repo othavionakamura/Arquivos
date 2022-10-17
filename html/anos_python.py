@@ -2,11 +2,11 @@ from time import sleep
 import pyautogui
 i = 0
 
-pyautogui.keyDown('ctrl')
+pyautogui.keyDown('alt')
 pyautogui.press(['tab'])
-pyautogui.keyUp('ctrl')
+pyautogui.keyUp('alt')
 
 
-while i < 30:
-    pyautogui.write('acéfalo, ')
+while i < 40:
+    pyautogui.write('')
     i = i + 1
