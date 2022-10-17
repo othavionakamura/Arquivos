@@ -59,6 +59,8 @@
         $i = $new_name_img3;
         $j = $new_name_img4;
         $k = $_POST['chave_pix'];
+        $l = $_POST['sobre'];
+        $m = $_POST['historia'];
         
         
         require('../conexao.php');
@@ -79,8 +81,13 @@
                 ':img3' => $i,
                 ':img4' => $j,
                 ':chave_pix' => $k
+            ));
 
+            $stmt = $pdo->prepare('INSERT INTO `site`.`informacoes_ongs` VALUES (null, :sobre, :historia)');
             
+            $stmt->execute(array(
+                ':sobre' => $l,
+                ':historia' => $m
             ));
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();

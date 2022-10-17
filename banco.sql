@@ -28,8 +28,20 @@ CREATE TABLE cadastro_ongs(
 	situacao INT NULL DEFAULT null
 );
 
+CREATE TABLE informacoes_ongs(
+	id int not null auto_increment primary key,
+    sobre varchar(700),
+    historia varchar(700),
+    foreign key (id) references cadastro_ongs(id)
+);
+
+
 SELECT * FROM cadastro_ongs;
 
 SELECT * FROM cadastro_usuario;
+
+select * from informacoes_ongs;
+
+SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id;
 
 drop database site;
