@@ -17,22 +17,35 @@
             display: flex;
         }
 
-        .left .img{
+        #content .left .img{
             height: 20vh;
-            width: 10%;
+            width: 20%;
             object-fit: cover;
         }
 
-        .left{
+        #content .left{
             height: 100vh;
             width: 50%;
+            margin: 3%;
         }
 
-        .right{
+        #content .right{
             height: 100vh;
             width: 50%;
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
+        #content .right .imgs{
+            height: 30vh;
+            width: 40%;
+            margin: 5%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -65,10 +78,10 @@
                   
                   
                   <div class='right'>
-                        <img src='imagens_ong_perfil/{$linha['img1']}' class='img'>
-                        <img src='imagens_ong_perfil/{$linha['img2']}' class='img'>
-                        <img src='imagens_ong_perfil/{$linha['img3']}' class='img'>
-                        <img src='imagens_ong_perfil/{$linha['img4']}' class='img'>
+                        <img src='imagens_ong/{$linha['img1']}' class='imgs'>
+                        <img src='imagens_ong/{$linha['img2']}' class='imgs'>
+                        <img src='imagens_ong/{$linha['img3']}' class='imgs'>
+                        <img src='imagens_ong/{$linha['img4']}' class='imgs'>
                   </div>
                   
                   
