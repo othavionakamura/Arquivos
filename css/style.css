@@ -25,14 +25,13 @@
     width: 100%;
     height: 100vh;
     background-color: #000000;
-    z-index: 50;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
-    animation: remover_abertura 1s ease-in forwards;
-    animation-delay: 3.5s;
+    animation: remover_abertura 1ms ease-in forwards;
 }
 
 .box {
@@ -49,7 +48,7 @@
     content: '';
     background-image: url(/html/logo_preenchida_branco.png);
     background-position: center;
-    background-size: 122%;
+    background-size: 120%;
     height: 100%;
     width: 100%;
     display: flex;
@@ -83,7 +82,7 @@
 #animacao img {
     transform: scale(100%);
     position: fixed;
-    z-index: 1;
+    z-index: 900;
     animation: remover_z-index 10s ease-in-out forwards;
 }
 
@@ -132,7 +131,7 @@
 
 @keyframes remover_z-index {
     0%{
-        z-index: 1;
+        z-index: 900;
     }
     100%{
         z-index: 0;

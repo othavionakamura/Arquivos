@@ -1,8 +1,7 @@
 const list = document.querySelectorAll('.list');
 
 function activeLink() {
-    list.forEach((item) =>
-        item.classList.remove('active'));
+    list.forEach((item) => item.classList.remove('active'));
     this.classList.add('active');
 }
 list.forEach((item) => item.addEventListener('click', activeLink));
@@ -41,12 +40,10 @@ setTimeout(function() {
 
 
 
-const menu_items = document.querySelectorAll('.content-menu-items');
-const checkbox = document.getElementById('checkbox')
 
-function abrir_menu() {
-    menu_items.forEach((item) =>
-        item.classList.remove('active'));
-    this.classList.add('active');
+const checkbox = document.getElementById('checkbox');
+const navigation = document.getElementById('navigation');
+
+function display_none() {
+    navigation.style.display = 'none'
 }
-menu_items.forEach((item) => checkbox.addEventListener('click', abrir_menu));
