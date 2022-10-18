@@ -37,3 +37,16 @@ setTimeout(function() {
         }, 0)
     )
 }, 1000)
+
+
+
+
+const menu_items = document.querySelectorAll('.content-menu-items');
+const checkbox = document.getElementById('checkbox')
+
+function abrir_menu() {
+    menu_items.forEach((item) =>
+        item.classList.remove('active'));
+    this.classList.add('active');
+}
+menu_items.forEach((item) => checkbox.addEventListener('click', abrir_menu));
