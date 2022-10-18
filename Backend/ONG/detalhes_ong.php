@@ -56,9 +56,8 @@
     require ('../conexao.php'); 
 
     $id = $_GET['id'];
-
     try {
-        $stmt = $pdo -> query('SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id where i_o.id = $id;');
+        $stmt = $pdo -> query("SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id where i_o.id = ' $id ' ;");
 
         echo "<div id='content'>";
         
