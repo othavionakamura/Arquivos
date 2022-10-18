@@ -12,6 +12,11 @@ CREATE TABLE cadastro_usuario(
    senha varchar (40) NULL DEFAULT NULL
 );
 
+CREATE TABLE estados(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(2)
+);
+
 CREATE TABLE cadastro_ongs(
 	id int NOT NULL auto_increment PRIMARY KEY,
    foto_pefil VARCHAR(100),
