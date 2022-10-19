@@ -8,6 +8,7 @@ nav {
     text-align: center;
     justify-content: space-around;
     align-items: center;
+    z-index: 500;
 }
 
 .navigation {
@@ -16,7 +17,7 @@ nav {
     margin-right: 10%;
     width: 600px;
     height: 10vh;
-    display: flex;
+    display: block;
     top: -1vh;
     justify-content: space-around;
     align-items: center;
@@ -103,7 +104,7 @@ nav {
 .indicator {
     position: absolute;
     top: 119%;
-    left: 7.4%;
+    left: 3.5%;
     width: 70px;
     height: 1px;
     transition: .5s;
@@ -222,10 +223,31 @@ nav {
 
 .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line {
     background-color: #000;
-    animation-delay: 10s;
 }
 
+#itens-menu{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
 
+#itens-menu .itens-menu-left{
+    width: 50%;
+    height: 100vh;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+#itens-menu .itens-menu-right{
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+}
 
 @media screen and (max-height: 660px) {
     .navigation ul li a .icon {

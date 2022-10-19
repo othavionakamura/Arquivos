@@ -42,8 +42,21 @@ setTimeout(function() {
 
 
 const checkbox = document.getElementById('checkbox');
+const hamburger_lines = document.getElementById('hamburger-lines');
 const navigation = document.getElementById('navigation');
+const menu_itens_left = document.getElementById('itens-menu-left')
+const menu_itens_right = document.getElementById('itens-menu-right')
+const itens_menu = document.getElementById('itens-menu')
+const logo = document.getElementById('logo')
 
 function display_none() {
-    navigation.style.display = 'none'
+    if (navigation.style.display === 'none') {
+        navigation.style.display = 'block'
+        menu_itens_left.style.transform = 'translateX(-100%)'
+        menu_itens_right.style.transform = 'translateX(100%)'
+    }else{
+        navigation.style.display = 'none'
+        menu_itens_left.style.transform = 'translateX(0)'
+        menu_itens_right.style.transform = 'translateX(0)'
+    }
 }
