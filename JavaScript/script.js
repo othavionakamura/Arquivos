@@ -49,14 +49,12 @@ const menu_itens = document.getElementById('itens-menu')
 
 
 function display_block() {
-    navigation.style.display = 'block'
     menu_itens_left.style.transform = 'translateX(-100%)'
     menu_itens_right.style.transform = 'translateX(100%)'
     menu_itens.style.zIndex = '-10'
 }
 
 function display_none(){
-    navigation.style.display = 'none'
     menu_itens_left.style.transform = 'translateX(0)'
     menu_itens_right.style.transform = 'translateX(0)'
     menu_itens.style.zIndex = '500'

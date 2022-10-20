@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+
 nav {
     position: fixed;
     display: flex;
@@ -223,12 +225,57 @@ nav {
     transition: all .5s ease-in-out;
 }
 
+.itens-menu-left img{
+    height: 30vh;
+    margin-top: -8vh;
+}
+
+.itens-menu-left ul{
+    list-style: none;
+    margin-top: 5vh;
+    margin-left: 10%;
+}
+
+.itens-menu-left ul li{
+    color: rgb(202, 202, 202);
+}
+
+.itens-menu-left ul a{
+    text-decoration: none;
+}
+
 #itens-menu .itens-menu-right{
     width: 50%;
     height: 100vh;
     background-color: #fff;
     transform: translateX(100%);
     transition: all .5s ease-in-out;
+}
+
+.itens-menu-right button{
+    font-weight: 600;
+    font-size: 3em;
+    display: flex;
+    margin-left: 90%;
+}
+
+.itens-menu-right .p1{
+    font-size: 3em;
+    width: 98%;
+    letter-spacing: .2vh;
+    line-height: 7vh;
+    margin-top: 20vh;
+    margin-left: 5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.itens-menu-right .p2{
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 300;
+    width: 40%;
+    margin-left: 5vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-height: 660px) {
