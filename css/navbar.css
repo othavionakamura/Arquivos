@@ -18,9 +18,7 @@ nav {
     margin-left: 10%;
     margin-right: 10%;
     width: 600px;
-    height: 10vh;
     display: block;
-    top: -1vh;
     justify-content: space-around;
     align-items: center;
 }
@@ -105,7 +103,7 @@ nav {
 
 .indicator {
     position: absolute;
-    top: 119%;
+    top: 109%;
     left: 3.5%;
     width: 70px;
     height: 1px;
@@ -187,6 +185,10 @@ nav {
     justify-content: space-between;
 }
 
+.navbar-container .hamburger-lines:hover {
+    cursor: pointer;
+}
+
 .navbar-container .hamburger-lines .line {
     display: block;
     height: 4px;
@@ -231,17 +233,19 @@ nav {
 }
 
 .itens-menu-left ul{
-    list-style: none;
-    margin-top: 5vh;
-    margin-left: 10%;
+    list-style: georgian;
+    margin-top: 6.5vh;
+    margin-left: 50%;
 }
 
 .itens-menu-left ul li{
     color: rgb(202, 202, 202);
 }
 
-.itens-menu-left ul a{
+.itens-menu-left ul li a{
     text-decoration: none;
+    color: rgb(235, 235, 235);
+    font-size: 2em;
 }
 
 #itens-menu .itens-menu-right{
@@ -252,11 +256,14 @@ nav {
     transition: all .5s ease-in-out;
 }
 
-.itens-menu-right button{
+.itens-menu-right label{
     font-weight: 600;
     font-size: 3em;
-    display: flex;
     margin-left: 90%;
+}
+
+.itens-menu-right label:hover{
+    cursor: pointer;
 }
 
 .itens-menu-right .p1{
@@ -287,6 +294,6 @@ nav {
         transform: translateY(17px);
     }
     .indicator{
-        top: 110%;
+        top: 85%;
     }
 }

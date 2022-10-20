@@ -9,6 +9,21 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px;
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+
 :root {
     --crl: #000000;
 }
@@ -155,14 +170,14 @@ body {
     align-items: center;
     justify-content: space-around;
     text-align: left;
-    padding-left: 15vh;
+    padding-left: 15%;
     padding-top: 4vh;
 }
 
 #inicio .content_inicio p {
     width: 100%;
     color: #f8f8f8;
-    font-size: 4em;
+    font-size: 3em;
     font-style: italic;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
@@ -172,7 +187,7 @@ body {
     font-weight: 800;
     color: #f8f8f8;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11em;
+    font-size: 10em;
     letter-spacing: 1vh;
     line-height: 80%;
     text-transform: uppercase;
@@ -505,7 +520,7 @@ footer {
 
 footer p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: .9em;
     font-weight: 200;
     text-align: center;
     margin-left: -35px;
@@ -514,11 +529,13 @@ footer p {
 }
 
 footer a {
+    font-size: .9em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     padding-right: 10px;
     color: #FFF;
     text-decoration: none;
+
 }
 
 footer .links {
@@ -568,7 +585,7 @@ footer:hover {
 
     #regioes .cima {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 7vh;
     }
 
     #regioes .cima .escolha {
