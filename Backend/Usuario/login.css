@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,45 +10,70 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40vh;
+    margin-top: 30vh;
 }
 
 .left{
     width: 50%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .left img{
     height: 15vh;
+    width: max-content;
+}
+
+.left p{
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .right{
     width: 50%;
     height: 100vh;
-    text-align: center;
-    align-items: center;
-}
-
-.right input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+}
+
+.right form{
+    background-color: black;
+    padding: 7vh 5%;
+    border-radius: 10px;
+}
+
+.right p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.right input{
+    margin: 1vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .right input[type='text']{
-    width: 50%;
     height: 5vh;
+    padding-left: 5%;
 }
 
 .right input[type='password']{
-    width: 50%;
     height: 5vh;
+    padding-left: 5%;
 }
 
 .right input[type='submit']{
-    width: 50%;
+    width: 92%;
     height: 5vh;
 }
+
+
+
+
+
+/*minha bingola na sua cara/*
