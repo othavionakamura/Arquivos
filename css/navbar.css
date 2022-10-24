@@ -248,6 +248,10 @@ nav {
     font-size: 2em;
 }
 
+.itens-menu-left ul li a:hover{
+    text-decoration: underline;
+}
+
 #itens-menu .itens-menu-right{
     width: 50%;
     height: 100vh;
@@ -270,7 +274,7 @@ nav {
     font-size: 3em;
     width: 98%;
     letter-spacing: .2vh;
-    line-height: 7vh;
+    line-height: 5vh;
     margin-top: 20vh;
     margin-left: 5vh;
     font-family: 'Montserrat', sans-serif;

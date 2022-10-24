@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    height: 15vh;
+}
+
+.right{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.right input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right input[type='text']{
+    width: 50%;
+    height: 5vh;
+}
+
+.right input[type='password']{
+    width: 50%;
+    height: 5vh;
+}
+
+.right input[type='submit']{
+    width: 50%;
+    height: 5vh;
+}
