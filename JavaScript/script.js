@@ -13,9 +13,13 @@ function changeBg(){
     var scrollValue = window.scrollY;
     console.log(scrollValue);
     
-    if(scrollValue < 730){
+    if(scrollValue < 637){
         navbar.classList.remove('bgColor');
-    } else {
+    } 
+    else if (scrollValue >= 2630) {
+        navbar.classList.remove('bgColor');
+    }
+    else {
         navbar.classList.add('bgColor');
     }
 }

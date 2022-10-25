@@ -48,6 +48,10 @@ nav {
     height: 15vh;
 }
 
+.logo img{
+    height: 100%;
+}
+
 .navigation ul {
     display: flex;
     width: 550px;
@@ -228,8 +232,9 @@ nav {
 }
 
 .itens-menu-left img{
-    height: 30vh;
-    margin-top: -8vh;
+    height: 10vh;
+    margin-top: 10vh;
+    margin-left: 10%;
 }
 
 .itens-menu-left ul{
