@@ -7,6 +7,7 @@ pyautogui.press(['tab'])
 pyautogui.keyUp('alt')
 
 
-while i < 40:
-    pyautogui.write('')
+while i < 150:
+    pyautogui.write('oi')
+    pyautogui.press('enter')
     i = i + 1
