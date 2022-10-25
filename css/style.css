@@ -231,7 +231,7 @@ body {
 }
 
 #regioes .baixo {
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 #regioes .baixo .left{
@@ -548,8 +548,6 @@ footer p {
     font-weight: 200;
     text-align: center;
     margin-left: -35px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 footer a {
@@ -564,7 +562,6 @@ footer a {
 
 footer .links {
     background-color: #000000;
-    padding-top: 5px;
     padding-bottom: 5px;
 }
 
