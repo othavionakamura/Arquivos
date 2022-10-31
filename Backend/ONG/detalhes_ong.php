@@ -17,16 +17,21 @@
             display: flex;
         }
 
+        #content .left{
+            height: 100vh;
+            width: 50%;
+            margin: 3%;
+        }
+
         #content .left .img{
             height: 20vh;
             width: 20%;
             object-fit: cover;
         }
 
-        #content .left{
-            height: 100vh;
-            width: 50%;
-            margin: 3%;
+        #content .left .conteudo p{
+            color: yellow;
+            width: 1%;
         }
 
         #content .right{
@@ -69,7 +74,7 @@
                             <h2>{$linha['nome']}</h2>
                             <p>Chave do Pix: {$linha['chave_pix']}</p>
                             <h1>Sobre</h1>
-                            <p class='sobre'>{$linha['sobre']}</p>
+                            <p>{$linha['sobre']}</p>
                         </div>
 
                   </div>
