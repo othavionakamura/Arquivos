@@ -2,6 +2,12 @@ CREATE DATABASE site;
 
 USE site;
 
+CREATE TABLE cadastro_adm(
+	id int NOT NULL auto_increment PRIMARY KEY,
+	email VARCHAR (50) NULL DEFAULT NULL,
+	cpf VARCHAR (14) NULL DEFAULT NULL,
+    senha varchar (40) NULL DEFAULT NULL
+);
 
 CREATE TABLE cadastro_usuario(
 	id int NOT NULL auto_increment PRIMARY KEY,
@@ -10,11 +16,6 @@ CREATE TABLE cadastro_usuario(
 	email VARCHAR (50) NULL DEFAULT NULL,
 	cpf VARCHAR (14) NULL DEFAULT NULL,
     senha varchar (40) NULL DEFAULT NULL
-);
-
-CREATE TABLE estados(
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	nome VARCHAR(2)
 );
 
 CREATE TABLE cadastro_ongs(
@@ -41,25 +42,24 @@ CREATE TABLE informacoes_ongs(
 );
 
 CREATE TABLE sobre(
-
-caminho varchar(1500),
-historia varchar(2000),
-ponto_turistico_um varchar(2000),
-ponto_turistico_dois varchar(2000),
-ponto_turistico_tres varchar(2000),
-caminho_um varchar(2000), 
-caminho_dois varchar(2000),
-caminho_tres varchar(2000),
-sinopse varchar(2000),
-dados_gerais varchar(2000),
-relevo varchar(2000),
-clima varchar(2000),
-vegetacao varchar(2000),
-hidrografia varchar(2000),
-divisao_geografica varchar(2000),
-economia varchar(2000),
-cultura varchar(2000),
-id_estado int auto_increment primary key
+	caminho varchar(1500),
+	historia varchar(2000),
+	ponto_turistico_um varchar(2000),
+	ponto_turistico_dois varchar(2000),
+	ponto_turistico_tres varchar(2000),
+	caminho_um varchar(2000), 
+	caminho_dois varchar(2000),
+	caminho_tres varchar(2000),
+	sinopse varchar(2000),
+	dados_gerais varchar(2000),
+	relevo varchar(2000),
+	clima varchar(2000),
+	vegetacao varchar(2000),
+	hidrografia varchar(2000),
+	divisao_geografica varchar(2000),
+	economia varchar(2000),
+	cultura varchar(2000),
+	id_estado int auto_increment primary key
 );
 
 
