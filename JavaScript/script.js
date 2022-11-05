@@ -55,7 +55,7 @@ const menu_itens = document.getElementById('itens-menu')
 function display_block() {
     menu_itens_left.style.transform = 'translateX(-100%)'
     menu_itens_right.style.transform = 'translateX(100%)'
-    menu_itens.style.zIndex = '-10'
+    setTimeout(() => {menu_itens.style.zIndex = '-10'}, 3000);
 }
 
 function display_none(){

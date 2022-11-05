@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Login</title>
 </head>
 <body>
-    <a href="../../html/index.html"><button>Voltar</button></a>
+    <div class="navbar">
+        <img src="../../img/logo.png">
+        <a href="../../html/index.html"><button class="voltar">Voltar</button></a>
+    </div>
+    
     <div class="content">
-            <img src="../../img/logo.png">
-        
             <form action="autenticacao_add.php" method="post">
-                <input type="text" name="email" placeholder="Email:">
-                <input type="password" name="senha" placeholder="Senha:">
+                <h1>Login</h1>
+                <div class="inputs-text">
+                    <div id="div-email">
+                        <input type="text" id="email" name="email" autocomplete="off">
+                        <label for="email" class="label-um">Email:</label>
+                        <label for="email" class="label-dois"><span class="material-symbols-outlined">person</span></label>
+                    </div>
+                    
+                    <div id="div-senha">
+                        
+                        <input type="password" id="senha" name="senha" autocomplete="off">
+                        <label for="senha" class="label-um">Senha:</label>
+                        <label for="senha" class="label-dois"><span class="material-symbols-outlined">lock</span></label>
+                    </div>
+                </div>
+                
+                
                 <input type="submit" value="Entrar">
             <p class="par_cad">Não possui uma conta: <a href="cad_cont_add.php">Cadastre-se</a></p>
             </form>
-            <p>O InfoZuca ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <p class="frase">Conecte-se ao Brasil sem sair de casa.</p>
     </div>
 </body>
 </html>

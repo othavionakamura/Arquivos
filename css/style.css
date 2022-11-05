@@ -627,7 +627,24 @@ footer:hover {
     }
 
     #economia p {
-        font-size: 1em;
+        font-size: 10px;
+        font-weight: 200;
+    }
+}
+
+
+@media screen and (max-height: 696px) {
+    #economia {
+        padding-top: 10vh;
+    }
+
+    #economia h1 {
+        color: white;
+        font-size: 4em;
+    }
+
+    #economia p {
+        font-size: 17px;
         font-weight: 200;
     }
 }
