@@ -154,8 +154,10 @@ body{
 }
 
 .name{
-    font-size: 3em;
+    font-size: 2.5em;
+    text-align: center;
     font-weight: 500;
+    width: 100%;
     color: #333;
     font-family: 'Poppins', sans-serif;
 }
@@ -236,8 +238,8 @@ body{
 
 .links ul li::after{
     content: '-';
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .links ul li:last-child::after{
