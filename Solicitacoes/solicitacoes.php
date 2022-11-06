@@ -83,11 +83,8 @@
 
                       </a>";
             }
-            
             echo "</div>";
         }
-
-        $stmt = $pdo->prepare('UPDATE site.cadastro_ongs set situacao=1 where id=:id');
             
 
         catch (PDOException $e) {
