@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+#body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    position: fixed;
+    height: 13vh;
+    width: 100%;
+    top: 3vh;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 5%;
+    align-items: stretch;
+}
+
+.logo{
+    height: 10vh;
+}
+
+.escolha{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    line-height: 5em;
+    margin-top: 3em;
+    z-index: 5;
+}
+
+.escolha p{
+    letter-spacing: .07em;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.escolha h1{
+    font-weight: 800;
+    font-size: 9em;
+    text-transform: uppercase;
+}
+
+.button-voltar{
+    font-family: 'Poppins', sans-serif;
+    height: 5vh;
+    width: 8em;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.button-voltar:hover{
+    cursor: pointer;
+}
+
+.slide-container{
+    max-width: 80%;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 20vh;
+}
+
+.slide-content{
+    margin: 40px 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card{
+    max-width: 100%;
+    border-radius:25px;
+    background-color: #efefef;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 3em 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2.5em;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: #000;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #efefef;
+}
+
+.card-image{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 4px solid #000;
+}
+
+.name{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #000;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button:hover{
+    background-color: #333;
+}
+
+.swiper-navBtn{
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: #333;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: #000;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #000;
+}
+
+
+.links{
+    position: absolute;
+    top: 95vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.links ul li a{
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links ul li a:hover{
+    text-decoration: underline;
+}
+
+.links ul li::after{
+    content: '-';
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.links ul li:last-child::after{
+    content: '';
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    
+    .swiper-navBtn{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .escolha{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+        align-items: center;
+        line-height: 3.5em;
+        margin-top: 0;
+    }
+    
+    .escolha p{
+        letter-spacing: .07em;
+        font-size: 1.8em;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .escolha h1{
+        font-weight: 800;
+        font-size: 6.5em;
+        text-transform: uppercase;
+    }
+
+    .image-content,
+    .card-content{
+        padding: 1.8em 0;
+    }
+
+    .image-content{
+        padding: 1em 0;
+    }
+}
