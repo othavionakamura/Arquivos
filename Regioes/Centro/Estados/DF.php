@@ -51,10 +51,10 @@
 
                 <div id='sinopse'>
                     <h1>Sinopse</h1>
-                    <p>{$linha['historia']}</p>
+                    <p>{$linha['sinopse']}</p>
                 </div>
                 <div id='pontos_turisticos'>
-                    <h1>Sinopse</h1>
+                    <h1>História</h1>
                     <p>{$linha['historia']}</p></div>
                 <div id='historia'></div>
                 <div id='dados'></div>
