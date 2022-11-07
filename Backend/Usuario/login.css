@@ -107,9 +107,9 @@ input{
 }
 
 input:focus + label{
-    font-size: 12px;
-    top: -3px;
-    color: #000;
+    font-size: 12px !important;
+    top: -3px !important;
+    color: #000 !important;
     transition: .3s;
 }
 

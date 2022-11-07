@@ -7,7 +7,7 @@
     <title>Enviado</title>
 </head>
 <body>
-    Enviado com sucesso!
+    Dados enviados com sucesso! Em breve serão analisados
 
     <a href="../../html/index.html#ong">Voltar para página inicial</a>
 </body>
