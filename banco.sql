@@ -43,6 +43,7 @@ CREATE TABLE informacoes_ongs(
 );
 
 CREATE TABLE sobre(
+	nome_estado VARCHAR(50),
 	caminho varchar(1500),
 	historia varchar(2000),
 	ponto_turistico_um varchar(2000),
@@ -65,8 +66,9 @@ CREATE TABLE sobre(
 
 
 INSERT INTO sobre VALUES(
+	"São Paulo",
 	"https://besthqwallpapers.com/Uploads/21-7-2018/60023/thumb2-flag-of-bahia-4k-state-of-brazil-silk-texture-bahia-flag.jpg",
-	"A Bahia é um estado da Região Nordeste do Brasil. A história do povoamento do território baiano está atrelada à chegada dos portugueses no Brasil, em 1500, quando se iniciou a colonização brasileira. A cidade de Salvador, capital da Bahia, foi também a primeira capital do Brasil.",
+	"A São Paulo é um estado da Região Nordeste do Brasil. A história do povoamento do território baiano está atrelada à chegada dos portugueses no Brasil, em 1500, quando se iniciou a colonização brasileira. A cidade de Salvador, capital da Bahia, foi também a primeira capital do Brasil.",
 	"O Parque Nacional da Chapada Diamantina é um parque nacional na região da Chapada Diamantina do Estado da Bahia, Brasil. O terreno é acidentado e coberto principalmente pela flora do bioma Caatinga",
 	"O Elevador Lacerda é um sistema de transporte público da cidade de Salvador, capital do estado brasileiro da Bahia. Trata-se do primeiro elevador urbano do mundo. Em 8 de dezembro de 1873, quando a primeira torre foi inaugurada, era o elevador mais alto do mundo, com 63 metros",
 	"A praia do Porto da Barra está situada no bairro da Barra, banhada pela Baía de Todos os Santos. Localiza-se no bairro da Barra; limita-se ao sul pela encosta que é formada pela Ladeira da Barra, passando pelo Hospital Espanhol indo até o Farol da Barra, passando pela fortaleza de Santa Maria",

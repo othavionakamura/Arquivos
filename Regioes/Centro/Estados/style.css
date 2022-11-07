@@ -69,7 +69,8 @@ body{
 
 #submenu{
     width: 100%;
-    top: 40vh;
+    top: 30vh;
+    background-color: #000;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -87,7 +88,7 @@ body{
 
 #submenu ul li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 1.5em;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -95,13 +96,13 @@ body{
 
 #submenu ul li a:hover{
     text-decoration: underline;
-    color: #000;
+    color: rgb(224, 224, 224);
     font-weight: bold;
 }
 
-#submenu ul li::after{
+#submenu ul li a::after{
     content: '-';
-    font-size: 2em;
+    font-size: 1em;
     margin-left: 2vw;
 }
 
@@ -109,4 +110,12 @@ body{
     content: '';
     margin-left: 0;
     margin-right: 0;
+}
+
+#sinopse{
+    width: 100%;
+    height: 80vh;
+    padding: 0 5%;
+    margin-top: 40vh;
+    display: block;
 }
