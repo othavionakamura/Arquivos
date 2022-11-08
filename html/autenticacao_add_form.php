@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,6 +21,18 @@
             <img src="../../img/logo.png">
             <a href="../../html/index.html"><button class="voltar">Voltar</button></a>
         </div>
+        <?php
+            if((isset($_SESSION)) and ($_SESSION['logado']==1)) {
+                header('location:../Backend/ONG/form_add.html');
+        ?>
+
+
+        <?php
+                }else{
+
+        ?>
+
+
         <div class="content">
             <form action="autenticacao_add.php" method="post">
                 <h1>Login</h1>
@@ -41,6 +56,12 @@
             </form>
             <p class="frase">Quer cadastrar sua ONG? Faça seu login!</p>
         </div>
+
+        <?php
+
+                }
+                
+        ?>
     </body>
 
     <script>

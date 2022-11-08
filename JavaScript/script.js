@@ -16,7 +16,7 @@ function changeBg(){
     if(scrollValue < 637){
         navbar.classList.remove('bgColor');
     } 
-    else if (scrollValue >= 2630) {
+    else if (scrollValue >= 3800) {
         navbar.classList.remove('bgColor');
     }
     else {

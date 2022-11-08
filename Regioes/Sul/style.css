@@ -36,15 +36,12 @@ body{
 }
 
 .escolha{
-    width: 100%;
-    position: absolute;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
     line-height: 5em;
-    margin-top: 3em;
     z-index: 5;
 }
 
