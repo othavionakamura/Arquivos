@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body{
@@ -44,6 +45,11 @@
             justify-content: center;
         }
         
+        .informacoes .left span{
+            position: relative;
+            top: 5vh;
+        }
+
         .informacoes .right{
             width: 50vw;
             height: 100vh;
@@ -105,6 +111,30 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            line-height: 20vh;
+        }
+
+        
+        .foto_perfil .right p{
+            letter-spacing: 1.3vw;
+            font-size: 3em;
+        }
+
+        .foto_perfil .right h1{
+            font-size: 1500%;
+        }
+
+        .foto_perfil .right .continuar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .foto_perfil .right .continuar p{
+            font-size: 100%;
+            text-transform: uppercase;
+            letter-spacing: .5vw;
         }
 
         .imagens{
@@ -166,7 +196,7 @@
 
         input{
             display: block;
-            margin:  2.5vh;
+            margin:  1vh;
         }
 
         input[type=text], input[type=password]{
@@ -174,7 +204,7 @@
             border-bottom: solid 1px rgb(70, 70, 70);
             border-right: 0;
             border-left: 0;
-            padding: 7px 30% 7px 10px;
+            padding: 10px 30% 10px 35px;
             font-family: 'Poppins' sans-serif;
             font-size: 15px;
         }
@@ -190,8 +220,8 @@
 
         .picture_image_perfil img{
             background-color: transparent;
-            width: 100px;
-            height: 100px;
+            width: 400px;
+            height: 400px;
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
@@ -307,23 +337,34 @@
 
         <div class="informacoes">        
             <div class="left">
-                <input type="text" name="nome" placeholder="Nome:" required>
+                <span class="material-symbols-outlined">account_circle</span>
+                <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+
+                <span class="material-symbols-outlined">home_pin</span>
                 <input type="text" name="endereco"  placeholder="Endereco:" required>
+                
+                <span class="material-symbols-outlined">alternate_email</span>
                 <input type="text" name="email"  placeholder="Email:" required>
+
+                <span class="material-symbols-outlined">call</span>
                 <input type="text" name="telefone"  placeholder="Telefone:">
+
+                <span class="material-symbols-outlined">lock</span>
                 <input type="password" name="senha" placeholder="Senha:" minlength="8" required>
+
+                <span class="material-symbols-outlined">attach_money</span>
                 <input type="text" name="chave_pix" placeholder="PIX:">
             </div>
             <div class="right">
                 <p>Cadastre sua</p>
                 <h1>ONG</h1>
-                <div class="continuar">
+                <a href="#foto_perfil"><div class="continuar">
                     <p>Continuar</p><span class="material-symbols-outlined">navigate_next</span>
-                </div>
+                </div></a>
             </div>
         </div>
 
-        <div class="foto_perfil">
+        <div class="foto_perfil" id="foto_perfil">
             <div class="left">
                 <label class="img_perfil" tabindex="0">
                     <span class="picture_image_perfil"></span>
@@ -333,10 +374,13 @@
             <div class="right">
                 <p>Cadastre sua</p>
                 <h1>ONG</h1>
+                <a href="#imagens"><div class="continuar">
+                    <p>Continuar</p><span class="material-symbols-outlined">navigate_next</span>
+                </div></a>
             </div>
         </div>
         
-        <div class="imagens">
+        <div class="imagens" id="imagens">
             
             <div class="top">
                 <p>Cadastre sua</p>
