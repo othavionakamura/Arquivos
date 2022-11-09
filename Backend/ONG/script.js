@@ -1,6 +1,6 @@
 const inputFile_perfil = document.querySelector('#picture_input_perfil');inputFile_perfil
 const pictureImage_perfil = document.querySelector('.picture_image_perfil');
-const pictureImageTxt_perfil = "<img src='boneco_perfil.jpg'>";
+const pictureImageTxt_perfil = "<p>Escolha sua foto</p>";
 pictureImage_perfil.innerHTML = pictureImageTxt_perfil;
 
 inputFile_perfil.addEventListener('change', function (p) {

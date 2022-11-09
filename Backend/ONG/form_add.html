@@ -45,9 +45,17 @@
             justify-content: center;
         }
         
-        .informacoes .left span{
+        .informacoes .left div{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .informacoes .left div span{
             position: relative;
-            top: 5vh;
+            left: 3vw;
         }
 
         .informacoes .right{
@@ -111,29 +119,42 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
             font-family: 'Poppins', sans-serif;
-            line-height: 20vh;
+            line-height: 14vh;
+            font-style: italic;
         }
 
         
         .foto_perfil .right p{
-            letter-spacing: 1.3vw;
-            font-size: 3em;
+            letter-spacing: .4vw;
+            font-size: 5em;
         }
 
         .foto_perfil .right h1{
-            font-size: 1500%;
+            font-size: 1600%;
+        }
+
+        .foto_perfil .right a{
+            text-decoration: none;
+            color: #fff;
         }
 
         .foto_perfil .right .continuar{
+            background-color: #000;
+            height: 8vh;
+            width: 10vw;
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
+            border-radius: 10px;
         }
 
         .foto_perfil .right .continuar p{
             font-size: 100%;
             text-transform: uppercase;
+            font-style: normal;
             letter-spacing: .5vw;
         }
 
@@ -196,7 +217,8 @@
 
         input{
             display: block;
-            margin:  1vh;
+            margin:  2vh;
+            font-family: 'Poppins', sans-serif;
         }
 
         input[type=text], input[type=password]{
@@ -204,7 +226,7 @@
             border-bottom: solid 1px rgb(70, 70, 70);
             border-right: 0;
             border-left: 0;
-            padding: 10px 30% 10px 35px;
+            padding: 10px 15vw 10px 3vw;
             font-family: 'Poppins' sans-serif;
             font-size: 15px;
         }
@@ -218,14 +240,28 @@
             display: none;
         }
 
-        .picture_image_perfil img{
+        .img_perfil{
+            cursor: pointer;
+            transform: scale(105%);
+        }
+
+        .picture_image_perfil p{
             background-color: transparent;
+            text-transform: uppercase;
+            font-size: 400%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: rgb(184, 184, 184);
             width: 400px;
             height: 400px;
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
             border: solid 1px #000;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .img_perfil img:hover{
@@ -315,7 +351,7 @@
             width: 10vw;
             outline: none;
             margin: none;
-            border-radius: 20px;
+            border-radius: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -337,23 +373,36 @@
 
         <div class="informacoes">        
             <div class="left">
-                <span class="material-symbols-outlined">account_circle</span>
-                <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                <div class="nome">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                </div>
 
-                <span class="material-symbols-outlined">home_pin</span>
-                <input type="text" name="endereco"  placeholder="Endereco:" required>
+                <div class="endereco">
+                    <span class="material-symbols-outlined">home_pin</span>
+                    <input type="text" name="endereco"  placeholder="Endereco:" required>    
+                </div>
                 
-                <span class="material-symbols-outlined">alternate_email</span>
-                <input type="text" name="email"  placeholder="Email:" required>
-
-                <span class="material-symbols-outlined">call</span>
-                <input type="text" name="telefone"  placeholder="Telefone:">
-
-                <span class="material-symbols-outlined">lock</span>
-                <input type="password" name="senha" placeholder="Senha:" minlength="8" required>
-
-                <span class="material-symbols-outlined">attach_money</span>
-                <input type="text" name="chave_pix" placeholder="PIX:">
+                <div class="email">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                    <input type="text" name="email"  placeholder="Email:" required>    
+                </div>
+                
+                <div class="telefone">
+                    <span class="material-symbols-outlined">call</span>
+                    <input type="text" name="telefone"  placeholder="Telefone:">    
+                </div>
+                
+                <div class="senha">
+                    <span class="material-symbols-outlined">lock</span>
+                    <input type="password" name="senha" placeholder="Senha:" minlength="8" required>    
+                </div>
+                
+                <div class="pix">
+                    <span class="material-symbols-outlined">attach_money</span>
+                    <input type="text" name="chave_pix" placeholder="PIX:">
+                </div>
+                
             </div>
             <div class="right">
                 <p>Cadastre sua</p>
