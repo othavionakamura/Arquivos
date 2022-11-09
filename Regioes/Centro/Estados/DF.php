@@ -12,7 +12,7 @@
 
     
     try {
-        $stmt = $pdo -> query('SELECT * FROM site . sobre where id_estado=1;');
+        $stmt = $pdo -> query('SELECT * FROM site . sobre where id_estado=22;');
         
         while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){
             echo "

@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    stroke-width: 1000vh;
+}
+
+:target{
+    scroll-margin-top: 35vh;
+}
+
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: fixed;
+    height: 25vh;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+
+.logo{
+    height: 13vh;
+}
+
+.escolha{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    line-height: 3em;
+    z-index: 5;
+}
+
+.escolha p{
+    letter-spacing: .07em;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.escolha h1{
+    max-width: 90%;
+    font-weight: 800;
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.button-voltar{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3vh;
+    height: 6vh;
+    width: 9vw;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.button-voltar:hover{
+    cursor: pointer;
+}
+
+#submenu{
+    width: 100%;
+    top: 23vh;
+    background-color: #000;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#submenu ul{
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#submenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+}
+
+#submenu ul li a:hover{
+    color: rgb(175, 175, 175);
+}
+
+#submenu ul li::after{
+    content: '-';
+    font-size: 1em;
+    margin-left: 2vw;
+}
+
+#submenu ul li:last-child::after{
+    content: '';
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bandeira{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.bandeira img{
+    height: 60vh;
+    border-radius: 10px;
+}
+
+#sinopse{
+    width: 100%;
+    padding: 0 5%;
+    margin: 20vh 0;
+    display: block;
+}
+
+#sinopse h1{
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#sinopse p{
+    font-size: 140%;
+    max-width: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#pontos_turisticos{
+    width: 100vw;
+    margin-top: 4vh;
+    display: block;
+}
+
+#pontos_turisticos h1{
+    font-size: 500%;
+    letter-spacing: 3vw;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.ponto_turistico_um,
+.ponto_turistico_dois,
+.ponto_turistico_tres{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+
+#pontos_turisticos img{
+    width: 50vw;
+    height: 55vh;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#pontos_turisticos p{
+    font-size: 120%;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ponto_turistico_dois{
+    text-align: end;
+} 
+
+
+#historia{
+    width: 100%;
+    padding: 0 5%;
+    margin: 20vh 0;
+    display: block;
+    text-align: end;
+}
+
+#historia h1{
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#historia p{
+    font-size: 140%;
+    max-width: 100%;
+    padding-left: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#dados{
+    width: 100%;
+    padding: 0 5%;
+    margin: 20vh 0;
+    display: block;
+}
+
+#dados h1{
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#dados p{
+    font-size: 140%;
+    max-width: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#geografia{
+    width: 100%;
+    margin: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.geografia_content{
+    width: 80%;
+    height: 50vh;
+    margin-top: 2vh;
+    overflow: scroll;
+    background-color: #000;
+    border-radius: 30px 0 0 1vw;
+    padding: 3% 8% 0 8%;
+}
+
+#geografia h1{
+    font-size: 500%;
+    letter-spacing: 1vw;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#geografia h2{
+    font-size: 300%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#geografia p{
+    font-size: 140%;
+    max-width: 100%;
+    margin-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+.geografia_content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+.geografia_content::-webkit-scrollbar-track {
+    background: #fff;
+}
+.geografia_content::-webkit-scrollbar-track-piece {
+    background: #fff;
+}
+.geografia_content::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+#economia{
+    width: 100%;
+    margin: 20vh 0;
+    display: block;
+    padding: 0 5%;
+    align-items: center;
+}
+
+#economia h1{
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#economia p{
+    font-size: 140%;
+    max-width: 70%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+#cultura{
+    width: 100%;
+    margin: 15vh 0;
+    display: block;
+    padding: 0 5%;
+    align-items: center;
+    text-align: end;
+}
+
+#cultura h1{
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#cultura p{
+    font-size: 140%;
+    max-width: 100%;
+    padding-left: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#voltar_topo{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#voltar_topo a{
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
