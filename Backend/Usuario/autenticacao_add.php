@@ -9,6 +9,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
 
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
         #aviso{
             background-color: #000;
             width: 25vw;
@@ -37,13 +46,6 @@
         #aviso a{
             color: #333;
             font-family: 'Poppins', sans-serif;
-        }
-        .buttons{
-            display: flex;
-            flex-direction: row;
-        }
-        .buttons a{
-            position: relative;
         }
     </style>
 </head>
