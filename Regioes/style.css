@@ -5,7 +5,6 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    stroke-width: 1000vh;
 }
 
 :target{
@@ -134,6 +133,7 @@ body{
 .bandeira img{
     height: 60vh;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
 
 #sinopse{
