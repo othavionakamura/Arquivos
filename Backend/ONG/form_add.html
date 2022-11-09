@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Cadastro ONG</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@300;800&display=swap');
@@ -16,17 +17,14 @@
 
         body{
             height: 100vh;
-            width: auto;
             overflow-y: hidden;
             overflow-x: scroll;
-            display: inline-block;
+            display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
         }
 
         .informacoes{
-            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -34,10 +32,54 @@
             justify-content: space-around;
             align-items: center;
             text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .informacoes .left{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .informacoes .right{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 20vh;
+        }
+
+        .informacoes .right p{
+            letter-spacing: 1.3vw;
+            font-size: 3em;
+        }
+
+        .informacoes .right h1{
+            font-size: 1500%;
+        }
+
+        .informacoes .right .continuar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .informacoes .right .continuar p{
+            font-size: 100%;
+            text-transform: uppercase;
+            letter-spacing: .5vw;
+        }
+
+        .informacoes .right .continuar span{
+            font-size: 200%;
         }
 
         .foto_perfil{
-            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -47,15 +89,31 @@
             text-align: center;
         }
 
+        .foto_perfil .left{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .foto_perfil .right{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         .imagens{
-            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            text-align: center;
         }
 
         .imagens .top{
@@ -79,7 +137,6 @@
         }
 
         .sobre{
-            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -89,9 +146,27 @@
             text-align: center;
         }
 
+        .sobre .left{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sobre .right{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         input{
             display: block;
-            margin:  4vh;
+            margin:  2.5vh;
         }
 
         input[type=text], input[type=password]{
@@ -99,7 +174,7 @@
             border-bottom: solid 1px rgb(70, 70, 70);
             border-right: 0;
             border-left: 0;
-            padding: 7px 10px 7px 20px;
+            padding: 7px 30% 7px 10px;
             font-family: 'Poppins' sans-serif;
             font-size: 15px;
         }
@@ -187,9 +262,49 @@
             border-radius: 10px;
             font-family: 'Poppins', sans-serif;
         }
+
+        navbar{
+            position: fixed;
+            height: 15vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        navbar img{
+            height: 10vh;
+            margin-left: 10vw;
+        }
+
+        navbar a button{
+            margin-right: 10vw;
+            background-color: #000;
+            color: aliceblue;
+            height: 6vh;
+            width: 10vw;
+            outline: none;
+            margin: none;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
     </style>
 </head>
 <body>
+
+        <navbar>
+            <div class="logo">
+                <img src="../../img/logo.png" alt="Logo">
+            </div>
+            <div class="button">
+                <a href="../../html/"><button>Cancelar</button></a>
+            </div>
+        </navbar>
+
         <div class="informacoes">        
             <div class="left">
                 <input type="text" name="nome" placeholder="Nome:" required>
@@ -202,6 +317,9 @@
             <div class="right">
                 <p>Cadastre sua</p>
                 <h1>ONG</h1>
+                <div class="continuar">
+                    <p>Continuar</p><span class="material-symbols-outlined">navigate_next</span>
+                </div>
             </div>
         </div>
 
@@ -260,11 +378,10 @@
             <div class="right">
                 <p>Cadastre sua</p>
                 <h1>ONG</h1>
+                <button type="submit" class="btn btn-success">Enviar</button>
             </div>
             
         </div>
-        
-        <button type="submit" class="btn btn-success">Enviar</button>
     </form>
 
     <script src="script.js"></script>
