@@ -14,8 +14,79 @@
             box-sizing: border-box;
         }
 
+        body{
+            height: 100vh;
+            width: auto;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            display: inline-block;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
         .informacoes{
-            margin: 1%;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .foto_perfil{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .imagens{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .imagens .top{
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .imagens .bottom{
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .sobre{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
         }
 
         input{
@@ -55,11 +126,6 @@
         .img_perfil img:hover{
             cursor: pointer;
             transform: scale(105%);
-        }
-
-        .imagens{
-            display: flex;
-            justify-content: space-around;
         }
 
         .label_imagens{
@@ -114,53 +180,88 @@
             max-width: 100%;
         }
 
-        .informacoes textarea{
+        .sobre textarea{
+            border: solid 1px #333;
+            padding: 5vh 2vw;
             resize: none;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 <body>
-    <form method="POST" enctype="multipart/form-data" action="ong_add.php">
-        <div class="informacoes">
-            <label class="img_perfil" tabindex="0">
-                <span class="picture_image_perfil"></span>
-                <input type="file" accept="image/*" name="pic" id="picture_input_perfil" class="form-control">
-            </label>
-        
-            <input type="text" name="nome" placeholder="Nome:" required>
+        <div class="informacoes">        
+            <div class="left">
+                <input type="text" name="nome" placeholder="Nome:" required>
+                <input type="text" name="endereco"  placeholder="Endereco:" required>
+                <input type="text" name="email"  placeholder="Email:" required>
+                <input type="text" name="telefone"  placeholder="Telefone:">
+                <input type="password" name="senha" placeholder="Senha:" minlength="8" required>
+                <input type="text" name="chave_pix" placeholder="PIX:">
+            </div>
+            <div class="right">
+                <p>Cadastre sua</p>
+                <h1>ONG</h1>
+            </div>
+        </div>
 
-            <input type="text" name="endereco"  placeholder="Endereco:" required>
-            <input type="text" name="email"  placeholder="Email:" required>
-            <input type="text" name="telefone"  placeholder="Telefone:">
-            <input type="password" name="senha" placeholder="Senha:" minlength="8" required>
-            <input type="text" name="chave_pix" placeholder="PIX:">
+        <div class="foto_perfil">
+            <div class="left">
+                <label class="img_perfil" tabindex="0">
+                    <span class="picture_image_perfil"></span>
+                    <input type="file" accept="image/*" name="pic" id="picture_input_perfil" class="form-control">
+                </label>
+            </div>
+            <div class="right">
+                <p>Cadastre sua</p>
+                <h1>ONG</h1>
+            </div>
         </div>
         
         <div class="imagens">
-            <label class="label_imagens" tabindex="0">
-                <span class="picture_image"></span>
-                <input type="file" name="img1" id="picture_input" accept="image/*" class="form-control">
-            </label>
-
-            <label class="label_imagens" tabindex="0">
-                <span class="picture_image2"></span>
-                <input type="file" name="img2" id="picture_input2" accept="image/*" class="form-control">
-            </label>
             
-            <label class="label_imagens" tabindex="0">
-                <span class="picture_image3"></span>
-                <input type="file" name="img3" id="picture_input3" accept="image/*" class="form-control">
-            </label>
+            <div class="top">
+                <p>Cadastre sua</p>
+                <h1>ONG</h1>
+            </div>
 
-            <label class="label_imagens" tabindex="0">
-                <span class="picture_image4"></span>
-                <input type="file" name="img4" id="picture_input4" accept="image/*" class="form-control">
-            </label>
+            <div class="bottom">
+            
+                <label class="label_imagens" tabindex="0">
+                    <span class="picture_image"></span>
+                    <input type="file" name="img1" id="picture_input" accept="image/*" class="form-control">
+                </label>
+    
+                <label class="label_imagens" tabindex="0">
+                    <span class="picture_image2"></span>
+                    <input type="file" name="img2" id="picture_input2" accept="image/*" class="form-control">
+                </label>
+                
+                <label class="label_imagens" tabindex="0">
+                    <span class="picture_image3"></span>
+                    <input type="file" name="img3" id="picture_input3" accept="image/*" class="form-control">
+                </label>
+    
+                <label class="label_imagens" tabindex="0">
+                    <span class="picture_image4"></span>
+                    <input type="file" name="img4" id="picture_input4" accept="image/*" class="form-control">
+                </label>
+            
+            </div>
+            
         </div>
 
-        <div class="informacoes">
-            <textarea name="sobre" cols="50" rows="15" placeholder="Sobre:"></textarea>
-            <textarea name="historia" cols="50" rows="15" placeholder="História:"></textarea>
+        <div class="sobre">
+            <div class="left">
+                <p>Conte sobre sua ong</p>
+                <textarea name="sobre" cols="50" rows="15" placeholder="(máximo: 1000 caracteres)" maxlength="1000"></textarea>
+            </div>
+
+            <div class="right">
+                <p>Cadastre sua</p>
+                <h1>ONG</h1>
+            </div>
+            
         </div>
         
         <button type="submit" class="btn btn-success">Enviar</button>

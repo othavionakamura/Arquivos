@@ -37,9 +37,8 @@ CREATE TABLE cadastro_ongs(
 
 CREATE TABLE informacoes_ongs(
 	id int not null auto_increment primary key,
-    sobre varchar(700),
-    historia varchar(700),
-    foreign key (id) references cadastro_ongs(id)
+	 sobre VARCHAR(1000),
+	 foreign key (id) references cadastro_ongs(id)
 );
 
 CREATE TABLE sobre(
