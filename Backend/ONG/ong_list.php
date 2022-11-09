@@ -12,6 +12,20 @@
             margin: 0;
             padding: 0;
         }
+
+        nav{
+            position: fixed;
+            background-color: #fff;
+            height: 15vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav img{
+            height: 10vh;
+        }
+
         #content{
             display: flex;
             width: 100%;
@@ -57,7 +71,9 @@
 </head>
 <body>
 
-    
+    <nav>
+        <img src="../../img/logo.png" alt="logo">
+    </nav>
     
     <?php
         require ('../conexao.php');

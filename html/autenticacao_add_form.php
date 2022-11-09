@@ -25,8 +25,6 @@
             if((isset($_SESSION)) and ($_SESSION['logado']==1)) {
                 header('location:../Backend/ONG/form_add.html');
         ?>
-
-
         <?php
                 }else{
 

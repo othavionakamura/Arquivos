@@ -94,9 +94,9 @@ SELECT * FROM cadastro_usuario;
 
 select * from informacoes_ongs;
 
-select * from sobre;
+SELECT * FROM sobre;
 
 SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id;
 SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id where i_o.id=1;
 
-drop database site;
+DROP DATABASE site;
