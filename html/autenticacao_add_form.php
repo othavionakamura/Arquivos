@@ -50,7 +50,7 @@
 
 
                 <input type="submit" value="Entrar">
-                <p class="par_cad">Não possui uma conta: <a href="cad_cont_add.php">Cadastre-se</a></p>
+                <p class="par_cad">Não possui uma conta: <a href="../Backend/Usuario/cad_cont_add.php">Cadastre-se</a></p>
             </form>
             <p class="frase">Quer cadastrar sua ONG? Faça seu login!</p>
         </div>

@@ -20,10 +20,9 @@ CREATE TABLE cadastro_usuario(
 
 CREATE TABLE cadastro_ongs(
 	id int NOT NULL auto_increment PRIMARY KEY,
-   cnpj VARCHAR(18) NOT NULL,
 	foto_pefil VARCHAR(100),
 	nome VARCHAR(42) NULL DEFAULT NULL,
-	endereco VARCHAR(30) NULL DEFAULT NULL,
+	endereco VARCHAR(300) NULL DEFAULT NULL,
 	email VARCHAR(50) NULL DEFAULT NULL,
 	telefone VARCHAR(30) NULL DEFAULT NULL,
 	senha varchar (40) NULL DEFAULT NULL,

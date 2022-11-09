@@ -65,7 +65,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            line-height: 15vh;
         }
 
         .informacoes .right p{
@@ -78,6 +77,7 @@
             font-size: 1500%;
             font-weight: 600;
             letter-spacing: 1vw;
+            margin: -15vh 0;
         }
 
         .informacoes .right .continuar{
@@ -142,7 +142,6 @@
             justify-content: center;
             text-align: center;
             font-family: 'Poppins', sans-serif;
-            line-height: 15vh;
         }
 
         .picture_image_perfil img{
@@ -152,7 +151,7 @@
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
-            border: solid #000 10px;
+            border: solid #000 .2em;
         }
 
         .foto_perfil .right p{
@@ -164,6 +163,7 @@
             font-size: 1500%;
             font-weight: 600;
             letter-spacing: 1vw;
+            margin: -15vh 0;
         }
 
         .foto_perfil .right a{
@@ -227,7 +227,7 @@
 
         #imagens .top p{
             font-family: 'Montserrat', sans-serif;
-            letter-spacing: 1.4vw;
+            letter-spacing: .3vw;
             font-size: 3em;
         }
 
@@ -235,7 +235,7 @@
             font-family: 'Monstserrat', sans-serif;
             text-align: center;
             font-weight: 900;
-            letter-spacing: 1vw;
+            letter-spacing: 1.5vw;
             font-size: 15em; 
         }
 
@@ -328,9 +328,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content:space-around;
             font-family: 'Poppins', sans-serif;
-            line-height: 15vh;
         }
 
         .sobre .right p{
@@ -340,13 +339,14 @@
         }
 
         .sobre .right h1{
+            margin: -70vh 0;
             font-size: 1500%;
             font-weight: 600;
             letter-spacing: 1vw;
         }
 
-        .sobre .right button{
-            width: 10vw;
+        .sobre .right input{
+            width: 15vw;
             height: 5vh;
             text-align: center;
             font-size: 100%;
@@ -356,8 +356,10 @@
             transition: all .5s ease;
         }
 
-        .sobre .right button:hover{
-            background-color: transparent;
+        .sobre .right input:hover{
+            cursor: pointer;
+            color: #fff;
+            background-color: #000;
             border: transparent;
         }
 
@@ -380,11 +382,12 @@
         }
 
         input[type=text], input[type=password]{
+            width: 35vw;
             border-top: 0;
             border-bottom: solid 1px rgb(70, 70, 70);
             border-right: 0;
             border-left: 0;
-            padding: 10px 15vw 10px 3vw;
+            padding: 10px 0 10px 3vw;
             font-family: 'Poppins' sans-serif;
             font-size: 15px;
         }
@@ -533,7 +536,7 @@
                 <a href="../../html/"><button>Cancelar</button></a>
             </div>
         </navbar>
-
+    <form action="ong_add.php" method="post">
         <div class="informacoes">        
             <div class="left">
                 <div class="nome">
@@ -595,12 +598,12 @@
         <div class="imagens" id="imagens">
             
             <div class="top">
-                <p>Cadastre sua</p>
+                <p>Mostre um pouco da sua</p>
                 <h1>ONG</h1>
             </div>
 
             <div class="bottom">
-            
+                
                 <label class="label_imagens" tabindex="0">
                     <span class="picture_image"></span>
                     <input type="file" name="img1" id="picture_input" accept="image/*" class="form-control">
@@ -625,22 +628,19 @@
 
             <a href="#sobre"><div class="continuar">
                 <p>Continuar</p><span class="material-symbols-outlined">navigate_next</span>
-            </div></a>
-
-            
-            
+            </div></a>     
         </div>
 
         <div class="sobre" id="sobre">
             <div class="left">
                 <p>Conte sobre sua ong</p>
-                <textarea name="sobre" cols="50" rows="15" placeholder="(máximo: 1000 caracteres)" maxlength="1000"></textarea>
+                <textarea name="sobre" cols="60vw" rows="5vh" placeholder="(máximo: 1000 caracteres)" maxlength="1000"></textarea>
             </div>
 
             <div class="right">
                 <p>Cadastre sua</p>
                 <h1>ONG</h1>
-                <button type="submit" class="btn btn-success">Enviar</button>
+                <input type="submit" class="btn btn-success"></input>
             </div>
             
         </div>
