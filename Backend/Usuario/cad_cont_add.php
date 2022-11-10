@@ -87,7 +87,6 @@
                 ':senha' => $e
             ));
 
-            sleep(1);
             ?>
         
         <META HTTP-EQUIV="REFRESH" CONTENT="1; URL=http://localhost/Backend/Usuario/sucesso.html">

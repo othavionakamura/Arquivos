@@ -72,7 +72,7 @@ if (isset($_POST['nome'])) {
             ':sobre' => $l
         ));
     ?>
-        
+        <META HTTP-EQUIV="REFRESH" CONTENT="1; URL=http://localhost/Backend/ONG/sucesso.html">
 <?php
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();

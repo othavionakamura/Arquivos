@@ -13,16 +13,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
+            scroll-behavior: smooth;
         }
 
         body{
             height: 100vh;
             overflow-y: hidden;
-            overflow-x: scroll;
+            overflow-x: hidden;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            background-image: url('../../img/MicrosoftTeams-image.png');
+            background-size: 100%;
+            background-attachment: fixed;
         }
 
         .informacoes{
@@ -77,7 +80,7 @@
             font-size: 1500%;
             font-weight: 600;
             letter-spacing: 1vw;
-            margin: -15vh 0;
+            margin: -10vh 0;
         }
 
         .informacoes .right .continuar{
@@ -157,13 +160,14 @@
         .foto_perfil .right p{
             letter-spacing: 1.3vw;
             font-size: 3em;
+            font-style: italic;
         }
 
         .foto_perfil .right h1{
             font-size: 1500%;
             font-weight: 600;
             letter-spacing: 1vw;
-            margin: -15vh 0;
+            margin: -10vh 0;
         }
 
         .foto_perfil .right a{
