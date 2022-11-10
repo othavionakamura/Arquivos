@@ -41,7 +41,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
-    line-height: 5em;
+    line-height: 4em;
     z-index: 5;
 }
 
@@ -54,14 +54,14 @@ body{
 
 .escolha h1{
     font-weight: 800;
-    font-size: 9em;
+    font-size: 7em;
     text-transform: uppercase;
 }
 
 .button-voltar{
     font-family: 'Poppins', sans-serif;
     height: 5vh;
-    width: 8em;
+    width: 10vw;
     border-radius: 100px;
     cursor: pointer;
     background-color: #000;
@@ -151,6 +151,15 @@ body{
 }
 
 .name{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-rn{
     font-size: 2.5em;
     text-align: center;
     font-weight: 500;

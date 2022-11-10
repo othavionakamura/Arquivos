@@ -33,15 +33,15 @@ body{
 
 .logo{
     height: 10vh;
-    width: auto;
 }
 
 .escolha{
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    line-height: 5em;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 4em;
     z-index: 5;
 }
 
@@ -54,7 +54,7 @@ body{
 
 .escolha h1{
     font-weight: 800;
-    font-size: 9em;
+    font-size: 6em;
     text-transform: uppercase;
 }
 
@@ -151,8 +151,19 @@ body{
 }
 
 .name{
-    font-size: 3em;
+    font-size: 1.5em;
+    text-align: center;
     font-weight: 500;
+    width: 100%;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-rn{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
     color: #333;
     font-family: 'Poppins', sans-serif;
 }
@@ -233,8 +244,8 @@ body{
 
 .links ul li::after{
     content: '-';
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .links ul li:last-child::after{
@@ -274,7 +285,7 @@ body{
     
     .escolha h1{
         font-weight: 800;
-        font-size: 6.5em;
+        font-size: 4em;
         text-transform: uppercase;
     }
 

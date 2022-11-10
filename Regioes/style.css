@@ -55,9 +55,10 @@ body{
 }
 
 .escolha h1{
-    max-width: 90%;
+    max-width: 100%;
     font-weight: 800;
-    font-size: 5em;
+    font-size: 4em;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -132,6 +133,7 @@ body{
 
 .bandeira img{
     height: 60vh;
+    width: auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
@@ -187,6 +189,7 @@ body{
     height: 55vh;
     object-fit: cover;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
 
 #pontos_turisticos p{
