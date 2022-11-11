@@ -561,7 +561,7 @@
                 
                 <div class="telefone">
                     <span class="material-symbols-outlined">call</span>
-                    <input type="text" name="telefone"  placeholder="Telefone:">    
+                    <input type="text" name="telefone" id="tel" placeholder="Telefone:">    
                 </div>
                 
                 <div class="senha">
@@ -652,5 +652,22 @@
     </form>
 
     <script src="script.js"></script>
+    <script>
+        const input = document.querySelector('#tel')
+
+        input.addEventListener('keypress', () =>{
+            let inputLength = input.value.length
+
+            if (inputLength === 0){
+                input.value += '('
+            }else if(inputLength === 3){
+                input.value += ') '
+            }else if(inputLength === 6){
+                input.value += ' '
+            }else if(inputLength === 11){
+                input.value += '-'
+            }
+        })
+    </script>
 </body>
 </html>

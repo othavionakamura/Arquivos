@@ -46,8 +46,7 @@
     justify-content: center;
     justify-content: center;
     flex-direction: column;
-    animation: remover_abertura 10s ease-in forwards;
-    animation-delay: 0s;
+    animation: remover_abertura 1s ease-in forwards;
 }
 
 .box {
