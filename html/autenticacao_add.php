@@ -1,5 +1,4 @@
 <?php
-    session_start();
     require ('../Backend/conexao.php');
 
     $email = $_POST['email'];
@@ -9,6 +8,7 @@
         $stmt = $pdo -> query("SELECT * FROM `site` . `cadastro_usuario` where email = '$email' and senha = '$senha';");
         
         if($stmt->rowCount() > 0){
+            session_start();
             $_SESSION['logado'] = 1;
             header('location:../Backend/ONG/form_add.html');
         }else{

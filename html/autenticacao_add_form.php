@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,10 +15,11 @@
 
     <body>
         <div class="navbar">
-            <img src="../../img/logo.png">
-            <a href="../../html/index.html"><button class="voltar">Voltar</button></a>
+            <img src="../img/logo.png">
+            <a href="index.html"><button class="voltar">Voltar</button></a>
         </div>
         <?php
+            session_start();
             if((isset($_SESSION)) and ($_SESSION['logado']==1)) {
                 header('location:../Backend/ONG/form_add.html');
         ?>
