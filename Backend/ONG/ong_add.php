@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviado</title>
-</head>
-<body>
-    Dados enviados com sucesso! Em breve serão analisados
-
-    <a href="../../html/index.html#ong">Voltar para página inicial</a>
-</body>
-</html>
 <?php
 
     if (isset($_FILES['pic'])) {
@@ -44,54 +30,53 @@
         $dir = 'imagens_ong/';
         move_uploaded_file($_FILES['img4']['tmp_name'], $dir . $new_name_img4); //Fazer upload do arquivo
     }
-    
-    
-    if(isset($_POST['nome'])){
+if (isset($_POST['nome'])) {
 
-        $a = $new_name;
-        $b = $_POST['nome'];
-        $c = $_POST['endereco'];
-        $d = $_POST['email'];
-        $e = $_POST['telefone'];
-        $f = $_POST['senha'];
-        $g = $new_name_img1;
-        $h = $new_name_img2;
-        $i = $new_name_img3;
-        $j = $new_name_img4;
-        $k = $_POST['chave_pix'];
-        $l = $_POST['sobre'];
-        $m = $_POST['historia'];
-        
-        
-        require('../conexao.php');
-        
-        try {
-            
-            $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :endereco, :email, :telefone , :senha, :img1, :img2, :img3, :img4, :chave_pix, 0)');
-            
-            $stmt->execute(array(
-                ':foto_perfil' => $a,
-                ':nome' => $b,
-                ':endereco' => $c,
-                ':email' => $d,
-                ':telefone' => $e,
-                ':senha' => $f,
-                ':img1' => $g,
-                ':img2' => $h,
-                ':img3' => $i,
-                ':img4' => $j,
-                ':chave_pix' => $k
-            ));
+    $a = $new_name;
+    $b = $_POST['nome'];
+    $c = $_POST['endereco'];
+    $d = $_POST['email'];
+    $e = $_POST['telefone'];
+    $f = $_POST['senha'];
+    $g = $new_name_img1;
+    $h = $new_name_img2;
+    $i = $new_name_img3;
+    $j = $new_name_img4;
+    $k = $_POST['chave_pix'];
+    $l = $_POST['sobre'];
 
-            $stmt = $pdo->prepare('INSERT INTO `site`.`informacoes_ongs` VALUES (null, :sobre, :historia)');
-            
-            $stmt->execute(array(
-                ':sobre' => $l,
-                ':historia' => $m
-            ));
+
+    require('../conexao.php');
+
+    try {
+
+        $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :endereco, :email, :telefone , :senha, :img1, :img2, :img3, :img4, :chave_pix, 1)');
+
+        $stmt->execute(array(
+            ':foto_perfil' => $a,
+            ':nome' => $b,
+            ':endereco' => $c,
+            ':email' => $d,
+            ':telefone' => $e,
+            ':senha' => $f,
+            ':img1' => $g,
+            ':img2' => $h,
+            ':img3' => $i,
+            ':img4' => $j,
+            ':chave_pix' => $k
+        ));
+
+        $stmt = $pdo->prepare('INSERT INTO `site`.`informacoes_ongs` VALUES (null, :sobre)');
+
+        $stmt->execute(array(
+            ':sobre' => $l
+        ));
+    ?>
+        <META HTTP-EQUIV="REFRESH" CONTENT="1; URL=http://localhost/Backend/ONG/sucesso.html">
+<?php
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
             echo "<br><b>Não Conectado</b>";
         }
-    }
+}
 ?>

@@ -16,7 +16,7 @@ function changeBg(){
     if(scrollValue < 637){
         navbar.classList.remove('bgColor');
     } 
-    else if (scrollValue >= 2630) {
+    else if (scrollValue >= 3800) {
         navbar.classList.remove('bgColor');
     }
     else {
@@ -34,10 +34,10 @@ setTimeout(function() {
     console.log(
         setInterval (() => {
             const computedStyle = getComputedStyle(progressBar)
-            const width = parseFloat(computedStyle.getPropertyValue('--width')) || 10
+            const width = parseFloat(computedStyle.getPropertyValue('--width')) || 100
         
-            progressBar.style.setProperty('--width', width + .2)
-        }, 0)
+            progressBar.style.setProperty('--width', width + 10)
+        }, 10)
     )
 }, 1000)
 
@@ -55,7 +55,7 @@ const menu_itens = document.getElementById('itens-menu')
 function display_block() {
     menu_itens_left.style.transform = 'translateX(-100%)'
     menu_itens_right.style.transform = 'translateX(100%)'
-    setTimeout(() => {menu_itens.style.zIndex = '-10'}, 3000);
+    setTimeout(() => {menu_itens.style.zIndex = '-10'}, 300);
 }
 
 function display_none(){

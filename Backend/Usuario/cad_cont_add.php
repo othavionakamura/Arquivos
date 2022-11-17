@@ -87,9 +87,11 @@
                 ':senha' => $e
             ));
 
-            sleep(1);
-            echo "Cadastro efetuado com sucesso!";
-
+            ?>
+        
+        <META HTTP-EQUIV="REFRESH" CONTENT="1; URL=http://localhost/Backend/Usuario/sucesso.html">
+    
+    <?php
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
             echo "<br><b>Não Conectado</b>";

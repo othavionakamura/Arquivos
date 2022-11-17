@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require ('../Backend/conexao.php');
 
     $email = $_POST['email'];
@@ -8,6 +9,7 @@
         $stmt = $pdo -> query("SELECT * FROM `site` . `cadastro_usuario` where email = '$email' and senha = '$senha';");
         
         if($stmt->rowCount() > 0){
+            $_SESSION['logado'] = 1;
             header('location:../Backend/ONG/form_add.html');
         }else{
             echo "Você ainda não possui uma conta!";

@@ -8,6 +8,6 @@ pyautogui.keyUp('alt')
 
 
 while i < 150:
-    pyautogui.write('oi')
+    pyautogui.write('Otário!')
     pyautogui.press('enter')
     i = i + 1

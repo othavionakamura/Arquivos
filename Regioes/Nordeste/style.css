@@ -36,15 +36,12 @@ body{
 }
 
 .escolha{
-    width: 100%;
-    position: absolute;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
-    line-height: 5em;
-    margin-top: 3em;
+    line-height: 4em;
     z-index: 5;
 }
 
@@ -57,14 +54,14 @@ body{
 
 .escolha h1{
     font-weight: 800;
-    font-size: 9em;
+    font-size: 6em;
     text-transform: uppercase;
 }
 
 .button-voltar{
     font-family: 'Poppins', sans-serif;
     height: 5vh;
-    width: 8em;
+    width: 10vw;
     border-radius: 100px;
     cursor: pointer;
     background-color: #000;
@@ -154,7 +151,7 @@ body{
 }
 
 .name{
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 500;
     width: 100%;
@@ -163,7 +160,7 @@ body{
 }
 
 .name-rn{
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 500;
     width: 100%;
@@ -190,6 +187,7 @@ body{
 .swiper-navBtn{
     color: #000;
     transition: color 0.3s ease;
+    margin-top: -5vh;
 }
 
 .swiper-navBtn:hover{
@@ -288,7 +286,7 @@ body{
     
     .escolha h1{
         font-weight: 800;
-        font-size: 6.5em;
+        font-size: 4em;
         text-transform: uppercase;
     }
 
