@@ -13,6 +13,53 @@
             padding: 0;
         }
 
+        nav{
+            height: 15vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        nav .logo{
+            width: 30%;
+            height: 70%;
+        }
+
+        nav .button{
+            width: 30%;
+            height: 30%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav img{
+            height: 100%;
+        }
+
+        nav button{
+            height: 5vh;
+            width: 10vw;
+            border-radius: 50px;
+            border: none;
+            outline: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            font-size: 1em;
+            transition: all .5s ease-in-out;
+        }
+
+        nav button:hover{
+            cursor: pointer;
+            background-color: #fff;
+            border: solid #000 .5px;
+            color: #000;
+        }
+
         #content{
             width: 100%;
             height: 100vh;
@@ -28,8 +75,8 @@
 
         #content .left .img{
             height: 20vh;
-            width: 20%;
-            object-fit: cover;
+            width: 150%;
+            margin-left: -20vw;
         }
 
         #content .left .conteudo p{
@@ -57,8 +104,16 @@
     </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="../../img/logo.png" alt="logo">
+        </div>
+        <div class="button">
+            <a href="ong_list.php"><button>Voltar</button></a>
+        </div>
+    </nav>
 <?php
-    
+
     require ('../conexao.php'); 
 
     $id = $_GET['id'];
