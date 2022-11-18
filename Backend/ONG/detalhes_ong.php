@@ -71,12 +71,13 @@
             width: 70%;
             margin: 0 auto;
             font-family: 'Poppins', sans-serif;
+            display: flex;
         }
 
         #content .left .img{
             height: 20vh;
-            width: 150%;
-            margin-left: -20vw;
+            width: 20vw;
+            object-fit: cover;
         }
 
         #content .left .conteudo p{

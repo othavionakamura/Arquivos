@@ -58,7 +58,7 @@ if (isset($_POST['nome'])) {
             ':endereco' => $c,
             ':email' => $d,
             ':telefone' => $e,
-            ':senha' => $f,
+            ':senha' => md5($f),
             ':img1' => $g,
             ':img2' => $h,
             ':img3' => $i,

@@ -89,7 +89,7 @@
 
             ?>
         
-        <META HTTP-EQUIV="REFRESH" CONTENT="1; URL=http://Usuario/sucesso.html">
+        <META HTTP-EQUIV="REFRESH" CONTENT="1; URL=http://localhost/Backend/Usuario/sucesso.html">
     
     <?php
         } catch (PDOException $e) {

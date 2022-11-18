@@ -30,27 +30,33 @@
 
 
         <div class="content">
-            <form action="autenticacao_add.php" method="post">
-                <h1>Login</h1>
-                <div class="inputs-text">
-                    <div id="div-email">
-                        <input type="text" id="email" class="input" name="email" autocomplete="off" onblur="Campo(0)">
-                        <label for="email" class="label-um">Email:</label>
-                        <label for="email" class="label-dois"><span class="material-symbols-outlined">person</span></label>
+            <div class="left">
+                <p class="frase">Quer cadastrar sua ONG? Faça seu login!</p>
+            </div>
+            <div class="right">
+                <form action="autenticacao_add.php" method="post">
+                    <h1>Login</h1>
+                    <div class="inputs-text">
+                        <div id="div-email">
+                            <input type="text" id="email" class="input" name="email" autocomplete="off" onblur="Campo(0)">
+                            <label for="email" class="label-um">Email:</label>
+                            <label for="email" class="label-dois"><span class="material-symbols-outlined">person</span></label>
+                        </div>
+
+                        <div id="div-senha">
+                            <input type="password" id="senha" class="input" name="senha" autocomplete="off" onblur="Campo(1)">
+                            <label for="senha" class="label-um">Senha:</label>
+                            <label for="senha" class="label-dois"><span class="material-symbols-outlined">lock</span></label>
+                        </div>
                     </div>
 
-                    <div id="div-senha">
-                        <input type="password" id="senha" class="input" name="senha" autocomplete="off" onblur="Campo(1)">
-                        <label for="senha" class="label-um">Senha:</label>
-                        <label for="senha" class="label-dois"><span class="material-symbols-outlined">lock</span></label>
-                    </div>
-                </div>
 
-
-                <input type="submit" value="Entrar">
-                <p class="par_cad">Não possui uma conta: <a href="../Backend/Usuario/cad_cont_add.php">Cadastre-se</a></p>
-            </form>
-            <p class="frase">Quer cadastrar sua ONG? Faça seu login!</p>
+                    <input type="submit" value="Entrar">
+                    <p class="par_cad">Não possui uma conta: <a href="../Backend/Usuario/cad_cont_add.php">Cadastre-se</a></p>
+                </form>
+            </div>
+            
+            
         </div>
 
         <?php
