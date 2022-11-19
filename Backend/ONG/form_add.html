@@ -546,7 +546,12 @@
             <div class="left">
                 <div class="nome">
                     <span class="material-symbols-outlined">account_circle</span>
-                    <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                    <input type="text" id="nome" name="nome" placeholder="Nome:" autofocus required>
+                </div>
+
+                <div class="cnpj">
+                    <span class="material-symbols-outlined">fingerprint</span>
+                    <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ:" maxlength="18" required>    
                 </div>
 
                 <div class="endereco">
@@ -561,7 +566,7 @@
                 
                 <div class="telefone">
                     <span class="material-symbols-outlined">call</span>
-                    <input type="text" name="telefone" id="tel" placeholder="Telefone:">    
+                    <input type="text" name="telefone" id="tel" maxlength="16" placeholder="Telefone:">    
                 </div>
                 
                 <div class="senha">
@@ -666,6 +671,22 @@
                 input.value += ' '
             }else if(inputLength === 11){
                 input.value += '-'
+            }
+        })
+
+        const input_cnpj = document.querySelector('#cnpj')
+
+        input_cnpj.addEventListener('keypress', () =>{
+            let inputLength = input_cnpj.value.length
+
+            if (inputLength === 2){
+                input_cnpj.value += '.'
+            }else if(inputLength === 6){
+                input_cnpj.value += '.'
+            }else if(inputLength === 10){
+                input_cnpj.value += '/'
+            }else if(inputLength === 15){
+                input_cnpj.value += '-'
             }
         })
     </script>

@@ -34,6 +34,7 @@ if (isset($_POST['nome'])) {
 
     $a = $new_name;
     $b = $_POST['nome'];
+    $cnpj = $_POST['cnpj'];
     $c = $_POST['endereco'];
     $d = $_POST['email'];
     $e = $_POST['telefone'];
@@ -50,11 +51,12 @@ if (isset($_POST['nome'])) {
 
     try {
 
-        $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :endereco, :email, :telefone , :senha, :img1, :img2, :img3, :img4, :chave_pix, 1)');
+        $stmt = $pdo->prepare('INSERT INTO `site`.`cadastro_ongs` VALUES (null, :foto_perfil, :nome, :cnpj, :endereco, :email, :telefone , :senha, :img1, :img2, :img3, :img4, :chave_pix, 0)');
 
         $stmt->execute(array(
             ':foto_perfil' => $a,
             ':nome' => $b,
+            ':cnpj' => $cnpj,
             ':endereco' => $c,
             ':email' => $d,
             ':telefone' => $e,
