@@ -21,7 +21,8 @@
                             <td>{$linha['email']}</td>
                             <td>{$linha['telefone']}</td>
                             <td>{$linha['chave_pix']}</td>
-                            <td><button>Aceitar</button></td>
+                            <td><button onclick='";require('update.php');
+                            echo"'>Aceitar</button></td>
                           </tr>";
                 }
                 
