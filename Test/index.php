@@ -11,6 +11,10 @@
         <?php
             require ('conexao.php');
 
+            function aceitar(){
+                echo "Bom dia!";
+            }
+
             try {
                 $stmt = $pdo -> query('SELECT * FROM site . cadastro_ongs where situacao=0;');
                 
@@ -21,8 +25,7 @@
                             <td>{$linha['email']}</td>
                             <td>{$linha['telefone']}</td>
                             <td>{$linha['chave_pix']}</td>
-                            <td><button onclick='";require('update.php');
-                            echo"'>Aceitar</button></td>
+                            <td><button onclick='aceitar()'>Aceitar</button></td>
                           </tr>";
                 }
                 
