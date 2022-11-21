@@ -12,7 +12,7 @@
             require ('conexao.php');
 
             function aceitar(){
-                echo "Bom dia!";
+                
             }
 
             try {
@@ -25,13 +25,12 @@
                             <td>{$linha['email']}</td>
                             <td>{$linha['telefone']}</td>
                             <td>{$linha['chave_pix']}</td>
-                            <td><button onclick='aceitar()'>Aceitar</button></td>
+                            <td><a href='update.php?id={$linha['id']}'><button>Aceitar</button></a></td>
                           </tr>";
                 }
                 
             }
                 
-    
             catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
                 echo "<br><b>Erro</b>";

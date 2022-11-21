@@ -1,7 +1,9 @@
 <?php
     require ('conexao.php');
 
-    $stmt2 = $pdo -> query('UPDATE `cadastro_ongs` SET situacao = 1 where id=3');
+    $id = $_GET['id'];
+
+    $stmt2 = $pdo -> query("UPDATE `cadastro_ongs` SET situacao = 1 where id = $id");
     $stmt2 ->execute(array(
         ':id' => 1
     ));
