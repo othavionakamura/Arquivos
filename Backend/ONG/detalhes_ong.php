@@ -65,19 +65,25 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
+            margin-top: 10vh;
         }
 
         #content .left{
-            width: 70%;
+            width: 60%;
             margin: 0 auto;
             font-family: 'Poppins', sans-serif;
             display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         #content .left .img{
-            height: 20vh;
-            width: 20vw;
+            height: 250px;
+            width: 250px;
+            object-position: center;
             object-fit: cover;
+            border-radius: 1000px;
+            border: solid #000 1px;
         }
 
         #content .left .conteudo p{

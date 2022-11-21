@@ -26,6 +26,7 @@
                             <td>{$linha['telefone']}</td>
                             <td>{$linha['chave_pix']}</td>
                             <td><a href='update.php?id={$linha['id']}'><button>Aceitar</button></a></td>
+                            <td><a href='delete.php?id={$linha['id']}'><button>Remover</button></a></td>
                           </tr>";
                 }
                 
