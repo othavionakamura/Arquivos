@@ -101,6 +101,7 @@
                 <div class="ong_opcoes"></div>
                 <li><a href="">Sobre o Site</a></li>
                 <li><a href="">O Grupo</a></li>
+                <li><a href="../admin/php/">Administrador</a></li>
             </ul>
         </div>
         <div class="itens-menu-right" id="itens-menu-right">

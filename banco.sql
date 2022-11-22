@@ -67,10 +67,13 @@ CREATE TABLE sobre(
     id_estado INT not null auto_increment primary key
 );
 
+INSERT INTO cadastro_adm VALUES (NULL,"othavio.nakamura@gmail.com","536.909.568-03","Hiroyuki");
 
 SELECT * FROM cadastro_ongs;
 
 SELECT * FROM cadastro_usuario;
+
+SELECT * FROM cadastro_adm;
 
 select * from informacoes_ongs;
 
