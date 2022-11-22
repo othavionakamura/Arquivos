@@ -30,7 +30,7 @@
         }
 
         nav button{
-            height: 5vh;
+            height: 6vh;
             width: 10vw;
             margin-left: 50vw;
             border-radius: 50px;
