@@ -7,13 +7,16 @@
     try {
         $stmt = $pdo -> query("SELECT * FROM `site` . `cadastro_usuario` where email = '$email' and senha = '$senha';");
         
-        if($stmt->rowCount() > 0){
-            session_start();
-            $_SESSION['logado'] = 1;
-            header('location:../Backend/ONG/form_add.html');
-        }else{
-            echo "Você ainda não possui uma conta!";
-            echo "<a href='../Backend/Usuario/cad_cont_add.php'>Cadastre-se</a>";
+        while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){    
+            if($stmt->rowCount() > 0){
+                session_start();
+                $_SESSION['logado'] = 1;
+                $_SESSION['nome'] = "{$linha('nome')}";
+                header('location:../Backend/ONG/form_add.html');
+            }else{
+                echo "Você ainda não possui uma conta!";
+                echo "<a href='../Backend/Usuario/cad_cont_add.php'>Cadastre-se</a>";
+            }
         }
     }
         
