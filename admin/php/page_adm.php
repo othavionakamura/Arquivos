@@ -7,10 +7,14 @@
     <title>Perfil ADM</title>
 </head>
 <body>
+    <nav>
+        <img src="../imgs/logo.png" alt="logo">
+        <a href=""></a>
+    </nav>
     <?php
         session_start();
 
-        echo "Olá, " . $_SESSION['nome'];
+        echo "<img src='../imgs_perfil/$_SESSION[foto_perfil]' class='foto_perfil'>" . $_SESSION['nome'];
     ?>
     <h1>O que deseja fazer agora?</h1>
     <a href="form_insert_adm.php"><button>Novo ADM</button></a>

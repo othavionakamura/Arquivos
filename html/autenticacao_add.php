@@ -11,7 +11,6 @@
             if($stmt->rowCount() > 0){
                 session_start();
                 $_SESSION['logado'] = 1;
-                $_SESSION['nome'] = "{$linha('nome')}";
                 header('location:../Backend/ONG/form_add.html');
             }else{
                 echo "Você ainda não possui uma conta!";

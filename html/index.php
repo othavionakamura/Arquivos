@@ -120,9 +120,6 @@
             <div class="content_inicio">
                 <p>Tudo sobre todas<br>as regiões e estados do</p>
                 <h1>Brasil</h1>
-                <?php
-                    echo "";
-                ?>
             </div>
         </div>
 

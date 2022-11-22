@@ -4,10 +4,11 @@ USE site;
 
 CREATE TABLE cadastro_adm(
 	id int NOT NULL auto_increment PRIMARY KEY,
+	foto_perfil VARCHAR(100) NULL DEFAULT NULL,
 	nome VARCHAR(50) NULL DEFAULT NULL,
 	email VARCHAR (50) NULL DEFAULT NULL,
 	cpf VARCHAR (14) NULL DEFAULT NULL,
-    senha varchar (40) NULL DEFAULT NULL
+   senha varchar (40) NULL DEFAULT NULL
 );
 
 CREATE TABLE cadastro_usuario(
@@ -84,4 +85,5 @@ SELECT * FROM sobre;
 
 SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id;
 SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id where i_o.id=1;
+
 DROP DATABASE site;
