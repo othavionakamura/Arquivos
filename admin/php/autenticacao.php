@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     require ('conexao.php');
 
     $email = $_POST['email'];
@@ -11,14 +11,13 @@ session_start();
         
         if($stmt->rowCount() > 0){
             $fetch = $stmt->fetch(PDO::FETCH_ASSOC);
-            $_SESSION['senha'] = $fetch['senha'];
+            $_SESSION['nome'] = $fetch['nome'];
             header('location:page_adm.php');
         }else{
             header('location:../erro.html');
         }
     }
         
-
     catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
         echo "<br><b>Não Conectado</b>";

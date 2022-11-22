@@ -4,6 +4,7 @@ USE site;
 
 CREATE TABLE cadastro_adm(
 	id int NOT NULL auto_increment PRIMARY KEY,
+	nome VARCHAR(50) NULL DEFAULT NULL,
 	email VARCHAR (50) NULL DEFAULT NULL,
 	cpf VARCHAR (14) NULL DEFAULT NULL,
     senha varchar (40) NULL DEFAULT NULL
@@ -67,7 +68,9 @@ CREATE TABLE sobre(
     id_estado INT not null auto_increment primary key
 );
 
-INSERT INTO cadastro_adm VALUES (NULL,"othavio.nakamura@gmail.com","536.909.568-03","Hiroyuki");
+INSERT INTO cadastro_adm VALUES (NULL,"Othávio Nakamura","othavio.nakamura@gmail.com","536.909.568-03","Hiroyuki");
+
+INSERT INTO cadastro_adm VALUES (NULL,"Mailon Davi","mailondavi@gmail.com","436.718.228-21","admin123");
 
 SELECT * FROM cadastro_ongs;
 

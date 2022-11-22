@@ -25,7 +25,7 @@
             </div>
             <div class="right">
                 <form action="autenticacao.php" method="post">
-                    <h1>Login do admin</h1>
+                    <h1>Login admin</h1>
                     <div class="inputs-text">
                         <div id="div-email">
                             <input type="text" id="email" class="input" name="email" autocomplete="off" onblur="Campo(0)">
