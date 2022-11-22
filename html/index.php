@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" id="body">
 
@@ -98,6 +101,7 @@
                 <div class="ong_opcoes"></div>
                 <li><a href="">Sobre o Site</a></li>
                 <li><a href="">O Grupo</a></li>
+                <li><a href="../admin/php/">Administrador</a></li>
             </ul>
         </div>
         <div class="itens-menu-right" id="itens-menu-right">
@@ -116,6 +120,9 @@
             <div class="content_inicio">
                 <p>Tudo sobre todas<br>as regiões e estados do</p>
                 <h1>Brasil</h1>
+                <?php
+                    echo "";
+                ?>
             </div>
         </div>
 
