@@ -65,15 +65,7 @@
                 $_SESSION['logado'] = 1;
                 header('location:../../html');
             }else{
-                ?>
-                    <div id="aviso">
-                    <span class="material-symbols-outlined">error</span>
-                        <p>Ainda não possui uma conta?</p>
-                        <div class="buttons"></div>
-                        <a href="cad_cont_add.php"><button>Cadastrar</button></a>
-                        <a href="../../html/index.html"><button>Cancelar</button></a>
-                    </div>
-                <?php
+                header('location:erro.html');
             }
         }
         catch (PDOException $e) {

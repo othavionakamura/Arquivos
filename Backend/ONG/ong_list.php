@@ -98,7 +98,7 @@
 
     <nav>
         <img src="../../img/logo.png" alt="logo">
-        <a href="../../html/index.html"><button>Voltar</button></a>
+        <a href="../../html/"><button>Voltar</button></a>
     </nav>
     
     <?php

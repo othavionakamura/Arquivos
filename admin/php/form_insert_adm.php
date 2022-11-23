@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../insert_adm.css">
 </head>
 <body>
-    <div class="navbar">
+    <nav>
         <img src="../../img/logo.png">
-        <a href="../../html/"><button class="voltar">Voltar</button></a>
-    </div>
+        <a href="page_adm.php"><button class="voltar">Voltar</button></a>
+    </nav>
 
     <div id="left"></div>
     <div id="right">

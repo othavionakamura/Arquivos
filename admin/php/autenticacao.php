@@ -12,6 +12,7 @@
         if($stmt->rowCount() > 0){
             $fetch = $stmt->fetch(PDO::FETCH_ASSOC);
             $_SESSION['nome'] = $fetch['nome'];
+            $_SESSION['email'] = $fetch['email'];
             $_SESSION['foto_perfil'] = $fetch['foto_perfil'];
             header('location:page_adm.php');
         }else{

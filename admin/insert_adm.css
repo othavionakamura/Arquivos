@@ -50,12 +50,14 @@ input[type=file]{
     align-items: center;
 }
 
-.navbar{
-    width: 100%;
+nav{
+    position: fixed;
+    background-color: transparent;
+    height: 15vh;
+    width: 100vw;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin-top: 2vh;
+    align-items: center;
 }
 
 img{
@@ -63,23 +65,31 @@ img{
     margin-right: 50%;
 }
 
-.voltar{
-    width: 100%;
-    padding: 1.5vh 7vh;
+nav button{
+    height: 6vh;
+    padding: 0 3vw;
+    margin-top: 2vh;
     border-radius: 50px;
     border: none;
-    margin-left: 30%;
+    outline: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: solid #000 .5px;
+    color: #000;
+    font-size: 1.2em;
+    transition: all .5s ease-in-out;
 }
 
-.voltar:hover{
+nav button:hover {
     cursor: pointer;
-    background-color: darkgray;
+    background-color: #000;
+    color: #fff;    
 }
 
 form{
     border-radius: 10px;
     width: 70%;
+    padding-top: 16vh;
     margin-left: 30%;
     display: flex;
     flex-direction: column;

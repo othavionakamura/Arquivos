@@ -7,4 +7,6 @@
     $stmt2 ->execute(array(
         ':id' => 1
     ));
+
+    header('location:avisos/sucesso.html');
 ?>
