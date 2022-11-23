@@ -65,7 +65,7 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            margin-top: 10vh;
+            margin-top: 3vh;
         }
 
         #content .left{
@@ -84,6 +84,7 @@
             object-fit: cover;
             border-radius: 1000px;
             border: solid #000 1px;
+            margin-right: 5vw;
         }
 
         #content .left .conteudo p{
@@ -92,21 +93,52 @@
         }
 
         #content .right{
-            width: 100%;
+            width: 50%;
             max-width: 50%;
             margin: auto;
             display: flex;
             align-items: center;
             text-align: center;
-            justify-content: space-around;
             flex-wrap: wrap;
         }
 
         #content .right .imgs{
             height: 30vh;
             width: 40%;
-            margin: 5%;
+            border-radius: 20px;
+            margin: 2%;
             object-fit: cover;
+        }
+
+        .sobre{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sobre h1{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .sobre p{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .conteudo h2{
+            font-size: 5em;
+            max-width: 50%;
+        }
+
+        .estojinho{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 15vh;
         }
     </style>
 </head>
@@ -136,20 +168,28 @@
 
                         <div class='conteudo'>
                             <h2>{$linha['nome']}</h2>
-                            <p>Chave do Pix: {$linha['chave_pix']}</p>
-                            <h1>Sobre</h1>
-                            <p>{$linha['sobre']}</p>
+                            <p><b>CNPJ:</b> {$linha['cnpj']}</p>
+                            <p><b>Telefone:</b> {$linha['telefone']}</p>
+                            <p><b>Email:</b> {$linha['email']}</p>
+                            <p><b>Endereço:</b> {$linha['endereco']}</p>
+                            <p><b>Chave do Pix:</b> {$linha['chave_pix']}</p>
                         </div>
 
                   </div>
-                  
-                  
-                  <div class='right'>
-                        <img src='imagens_ong/{$linha['img1']}' class='imgs'>
-                        <img src='imagens_ong/{$linha['img2']}' class='imgs'>
-                        <img src='imagens_ong/{$linha['img3']}' class='imgs'>
-                        <img src='imagens_ong/{$linha['img4']}' class='imgs'>
-                  </div>
+                
+                  <div class='estojinho'>
+                        <div class='right'>
+                                <img src='imagens_ong/{$linha['img1']}' class='imgs'>
+                                <img src='imagens_ong/{$linha['img2']}' class='imgs'>
+                                <img src='imagens_ong/{$linha['img3']}' class='imgs'>
+                                <img src='imagens_ong/{$linha['img4']}' class='imgs'>
+                        </div>
+
+                        <div class='sobre'>
+                            <h1>Sobre nossa ONG</h1>
+                            <p>{$linha['sobre']}</p>
+                        </div>
+                   </div>
                   
                   
                   ";

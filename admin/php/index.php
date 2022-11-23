@@ -16,7 +16,7 @@
     <body>
         <div class="navbar">
             <img src="../imgs/logo.png">
-            <a href="index.html"><button class="voltar">Voltar</button></a>
+            <a href="../../html/"><button class="voltar">Voltar</button></a>
         </div>
 
         <div class="content">
