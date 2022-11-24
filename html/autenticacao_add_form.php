@@ -16,7 +16,7 @@
     <body>
         <div class="navbar">
             <img src="../img/logo.png">
-            <a href="index.html"><button class="voltar">Voltar</button></a>
+            <a href="index.php"><button class="voltar">Voltar</button></a>
         </div>
         <?php
             session_start();
