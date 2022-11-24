@@ -64,15 +64,20 @@
             width: 100%;
             height: 100vh;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             margin-top: 3vh;
         }
 
         #content .left{
             width: 60%;
+            height: 80vh;
             margin: 0 auto;
             font-family: 'Poppins', sans-serif;
+            color: #fff;
             display: flex;
+            background-color: #000;
+            border-radius: 0 50px 50px 0;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
@@ -86,9 +91,15 @@
             border: solid #000 1px;
             margin-right: 5vw;
         }
+        
+        #content .left .conteudo h1{
+            color: #fff;
+            width: 80%;
+            font-size: 1em;
+        }
 
         #content .left .conteudo p{
-            color: black;
+            color: #fff;
             width: 100%;
         }
 
