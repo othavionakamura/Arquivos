@@ -80,6 +80,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
         #content .left .img{
@@ -93,9 +94,7 @@
         }
         
         #content .left .conteudo h1{
-            color: #fff;
-            width: 80%;
-            font-size: 1em;
+            color: #000;
         }
 
         #content .left .conteudo p{
