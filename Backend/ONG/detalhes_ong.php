@@ -69,7 +69,7 @@
         }
 
         #content .left{
-            width: 60%;
+            width: 25%;
             height: 80vh;
             margin: 0 auto;
             font-family: 'Poppins', sans-serif;
@@ -93,8 +93,8 @@
             margin-right: 5vw;
         }
         
-        #content .left .conteudo h1{
-            color: #000;
+        #content .left .conteudo h2{
+            color: #fff;
         }
 
         #content .left .conteudo p{
@@ -103,18 +103,17 @@
         }
 
         #content .right{
-            width: 50%;
-            max-width: 50%;
-            margin: auto;
+            width: 100%;
+            margin: 0 auto;
             display: flex;
+            flex-direction: row;
             align-items: center;
             text-align: center;
             flex-wrap: wrap;
         }
 
         #content .right .imgs{
-            height: 30vh;
-            width: 40%;
+            width:30%;
             border-radius: 20px;
             margin: 2%;
             object-fit: cover;
@@ -123,19 +122,18 @@
         .sobre{
             font-family: 'Poppins', sans-serif;
             font-size: 1.5em;
-            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         .sobre h1{
-            width: 75%;
+            width: 80%;
             margin: 0 auto;
         }
 
         .sobre p{
-            width: 75%;
+            width: 80%;
             margin: 0 auto;
         }
 
@@ -146,7 +144,9 @@
 
         .estojinho{
             display: flex;
+            width: 75%;
             justify-content: space-evenly;
+            flex-direction: column;
             align-items: center;
             margin-top: 15vh;
         }

@@ -31,7 +31,7 @@
                         <p>informações sobre o estado</p>
                     </div>
                     
-                    <a href='../../../html/index.html' class='link-button-voltar'>
+                    <a href='../../../html/index.php' class='link-button-voltar'>
                         <button class='button-voltar item'>Home</button>
                     </a>
                     
