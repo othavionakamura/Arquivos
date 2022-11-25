@@ -25,10 +25,10 @@
                             <div class='left'>
                                 <img src='../Backend/ONG/imagens_ong_perfil/{$linha['foto_pefil']}'>
                                 <h1>{$linha['nome']}</h1>
-                                <p><b>CNPJ:</b>{$linha['cnpj']}</p>
-                                <p><b>Email:</b>{$linha['email']}</p>
-                                <p><b>Telefone:</b>{$linha['telefone']}</p>
-                                <p><b>PIX:</b>{$linha['chave_pix']}</p>
+                                <p><b>CNPJ: </b>{$linha['cnpj']}</p>
+                                <p><b>Email: </b>{$linha['email']}</p>
+                                <p><b>Telefone: </b>{$linha['telefone']}</p>
+                                <p><b>PIX: </b>{$linha['chave_pix']}</p>
                                 <div class='buttons'>
                                     <a href='update.php?id={$linha['id']}'><button class='aceitar'>Aceitar</button></a>
                                     <a href='delete.php?id={$linha['id']}'><button class='remover'>Remover</button></a>
