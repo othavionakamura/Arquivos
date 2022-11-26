@@ -23,12 +23,6 @@
 
 <body>
 
-    <div id="animacao" class="animacao">
-        <a href="#"><img src="logo_contorno_branco.png" alt="logo_contorno"></a>
-        <div class="box"></div>
-        <div class="progress-bar" data-label="Iniciando..."></div>
-    </div>
-
     <nav id="nav">
         <div id="logo" class="logo">
             <img src="../img/logo-branca.png">
@@ -343,7 +337,7 @@
 
         <div id="pontos">
             <div class="left">
-                <form action="post">
+                <form action="mailto:joaorodriguesm05@gmail.com" enctype="text/plain">
                     <p>Entre em contato conosco</p>
                     <input type="" placeholder="Insira seu Nome">
                     <input type="text" placeholder="Insira seu Email">

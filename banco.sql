@@ -69,9 +69,8 @@ CREATE TABLE sobre(
     id_estado INT not null auto_increment primary key
 );
 
-INSERT INTO cadastro_adm VALUES (NULL,"Othávio Nakamura","othavio.nakamura@gmail.com","536.909.568-03","Hiroyuki");
 
-INSERT INTO cadastro_adm VALUES (NULL,"Mailon Davi","mailondavi@gmail.com","436.718.228-21","admin123");
+
 
 SELECT * FROM cadastro_ongs;
 
@@ -83,7 +82,6 @@ select * from informacoes_ongs;
 
 SELECT * FROM sobre;
 
-DROP TABLE sobre;
 
 SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id;
 SELECT * FROM cadastro_ongs as c_o INNER JOIN informacoes_ongs as i_o ON i_o.id = c_o.id where i_o.id=1;

@@ -10,6 +10,7 @@
         while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){    
             if($stmt->rowCount() > 0){
                 session_start();
+                $fetch = $stmt->fetch(PDO::FETCH_ASSOC);
                 $_SESSION['logado'] = 1;
                 header('location:../Backend/ONG/form_add.html');
             }else{
