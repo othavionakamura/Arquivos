@@ -11,7 +11,7 @@
 <body>
     <div class="navbar">
         <img src="../../img/logo.png">
-        <a href="../../html/index.html"><button class="voltar">Voltar</button></a>
+        <a href="javascript: history.go(-1)"><button class="voltar">Voltar</button></a>
     </div>
 
     <div id="left"></div>
