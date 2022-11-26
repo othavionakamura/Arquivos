@@ -1,31 +1,3 @@
-CREATE DATABASE pesquisa;
-USE pesquisa;
-
-CREATE TABLE sobre(
-    nome_estado VARCHAR(50),
-    caminho VARCHAR(150),
-    historia VARCHAR(1900),
-    nome_ponto_um VARCHAR(50),
-    ponto_turistico_um VARCHAR(999),
-    nome_ponto_dois VARCHAR(50),
-    ponto_turistico_dois VARCHAR(999),
-    nome_ponto_tres VARCHAR(50),
-    ponto_turistico_tres VARCHAR(999),
-    caminho_um VARCHAR(800),
-    caminho_dois VARCHAR(800),
-    caminho_tres VARCHAR(800),
-    sinopse VARCHAR(800),
-    dados_gerais VARCHAR(800),
-    relevo VARCHAR(999),
-    clima VARCHAR(800),
-    vegetacao VARCHAR(800),
-    hidrografia VARCHAR(800),
-    divisao_geografica VARCHAR(800),
-    economia VARCHAR(999),
-    cultura VARCHAR(999),
-    id_estado INT not null auto_increment primary key
-);
-
 INSERT INTO sobre VALUE(
 "Rio Grande do Sul",
 "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/243px-Bandeira_do_Rio_Grande_do_Sul.svg.png",
