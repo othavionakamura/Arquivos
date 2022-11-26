@@ -4,153 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="detalhes_ong.css">
     <title>ONG</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;800&display=swap');
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        nav{
-            height: 15vh;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-            justify-content: space-between;
-        }
-
-        nav .logo{
-            width: 30%;
-            height: 70%;
-        }
-
-        nav .button{
-            width: 30%;
-            height: 30%;
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-        }
-
-        nav img{
-            height: 100%;
-        }
-
-        nav button{
-            height: 5vh;
-            width: 10vw;
-            border-radius: 50px;
-            border: none;
-            outline: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #000;
-            color: #fff;
-            font-size: 1em;
-            transition: all .5s ease-in-out;
-        }
-
-        nav button:hover{
-            cursor: pointer;
-            background-color: #fff;
-            border: solid #000 .5px;
-            color: #000;
-        }
-
-        #content{
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            margin-top: 3vh;
-        }
-
-        #content .left{
-            width: 25%;
-            height: 80vh;
-            margin: 0 auto;
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            display: flex;
-            background-color: #000;
-            border-radius: 0 50px 50px 0;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        #content .left .img{
-            height: 250px;
-            width: 250px;
-            object-position: center;
-            object-fit: cover;
-            border-radius: 1000px;
-            border: solid #000 1px;
-            margin-right: 5vw;
-        }
-        
-        #content .left .conteudo h2{
-            color: #fff;
-        }
-
-        #content .left .conteudo p{
-            color: #fff;
-            width: 100%;
-        }
-
-        #content .right{
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-            flex-wrap: wrap;
-        }
-
-        #content .right .imgs{
-            width:30%;
-            border-radius: 20px;
-            margin: 2%;
-            object-fit: cover;
-        }
-
-        .sobre{
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .sobre h1{
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        .sobre p{
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        .conteudo h2{
-            font-size: 5em;
-            max-width: 50%;
-        }
-
-        .estojinho{
-            display: flex;
-            width: 75%;
-            justify-content: space-evenly;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 15vh;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -161,6 +17,7 @@
             <a href="ong_list.php"><button>Voltar</button></a>
         </div>
     </nav>
+
 <?php
 
     require ('../conexao.php'); 
@@ -187,25 +44,36 @@
 
                   </div>
                 
-                  <div class='estojinho'>
-                        <div class='right'>
-                                <img src='imagens_ong/{$linha['img1']}' class='imgs'>
-                                <img src='imagens_ong/{$linha['img2']}' class='imgs'>
-                                <img src='imagens_ong/{$linha['img3']}' class='imgs'>
-                                <img src='imagens_ong/{$linha['img4']}' class='imgs'>
+                <div class='right'>
+                    <div class='swiper mySwiper'>
+                        <div class='swiper-wrapper'>
+                            <div class='swiper-slide'><img src='imagens_ong/{$linha['img1']}' alt='imagem'></div>
+                            <div class='swiper-slide'><img src='imagens_ong/{$linha['img2']}' alt='imagem'></div>
+                            <div class='swiper-slide'><img src='imagens_ong/{$linha['img3']}' alt='imagem'></div>
+                            <div class='swiper-slide'><img src='imagens_ong/{$linha['img4']}' alt='imagem'></div>
                         </div>
-
-                        <div class='sobre'>
-                            <h1>Sobre nossa ONG</h1>
-                            <p>{$linha['sobre']}</p>
-                        </div>
-                   </div>
-                  
-                  
+                        <div class='swiper-button-next'></div>
+                        <div class='swiper-button-prev'></div>
+                        <div class='swiper-pagination'></div>
+                    </div>
+                </div>
                   ";
-        }
         
         echo "</div>";
+
+        echo "
+        <div class='sobre'>
+            <h1>Sobre a ONG</h1>
+            <p class='text'>
+                {$linha['sobre']}
+
+                <span class='overflow' data-state='visible' aria-hidden='true'> </span>
+
+            </p>
+
+            <button class='toggle' data-state='more'> Ver mais </button>
+        </div>";  
+        }     
     }
         
 
@@ -215,5 +83,53 @@
     }
 
 ?>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    });
+</script>
+
+<script>
+    const txt = document.querySelector(".text");
+    const textInitialHeight = txt.clientHeight;
+    const overflow = document.querySelector(".overflow");
+    const btn = document.querySelector(".toggle");
+
+    btn.addEventListener("click", initToggle);
+
+    function initToggle(e){
+        txt.style.maxHeight =
+        e.target.dataset.state === "more"
+        ? `${txt.scrollHeight}px`
+        : `${textInitialHeight}px`;
+
+        e.target.setAttribute(
+            "data-state",
+            e.target.dataset.state === "more" ? "less" : "more"
+        );
+
+        e.target.innerHTML = e.target.dataset.state === "more" ? "Ver Mais" : "Ver Menos";
+
+        overflow.setAttribute(
+            "data-state", e.target.dataset.state === "more" ? "visible" : "hidden"  
+        );
+    }
+</script>
 </body>
 </html>

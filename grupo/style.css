@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.border{
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.border:hover{
+  border: 1px solid #fff;
+}
+
+.card{
+  height: 379px;
+  width: 300px;
+  background-color: #808080;
+  border-radius: 10px;
+  transition: background .8s;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+
+.card0{
+  background-image: url('') center center no-repeat;
+  background-size: 300px;
+}
+
+.card0:hover{
+  background-image: url('') left center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2{
+  opacity: 1;
+}
+
+.card0:hover i{
+  opacity: 1;
+}
+
+
+
+.card1{
+  background-image: url('') center center no-repeat;
+  background-size: 300px;
+}
+
+.card1:hover{
+  background-image: url('') left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2{
+  opacity: 1;
+}
+
+.card1:hover i{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.card2{
+  background-image: url('') center center no-repeat;
+  background-size: 300px;
+}
+
+.card2:hover{
+  background-image: url('') left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2{
+  opacity: 1;
+}
+
+.card2:hover i{
+  opacity: 1;
+}
+
+
+
+h2{
+  color: #fff;
+  margin-left: 2vw;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+i{
+  color: #fff;
+  opacity: 0;
+  transition: opacity 1s;
+}

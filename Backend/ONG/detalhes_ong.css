@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 30%;
+    height: 70%;
+}
+
+nav .button {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    height: 100%;
+}
+
+nav button {
+    height: 6vh;
+    width: 10vw;
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-size: 1em;
+    transition: all .5s ease-in-out;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: solid #000 .5px;
+    color: #000;
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+
+#content .left {
+    width: 25%;
+    height: 75vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    background-color: #000;
+    border-radius: 0 30px 30px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content .left .img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 1000px;
+    border: solid #000 1px;
+    margin-bottom: 4vh;
+}
+
+#content .left .conteudo{
+    line-height: 6vh;
+}
+
+#content .left .conteudo h2 {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#content .left .conteudo p {
+    color: #fff;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#content .right {
+    width: 75%;
+    height: 75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sobre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre h1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sobre p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conteudo h2 {
+    font-size: 5em;
+    max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.swiper {
+    width: 75%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next {
+    color: #000;
+}
+
+.swiper-button-prev {
+    color: #000;
+}
+
+.swiper-pagination {
+    fill: #000;
+}
+
+
+
+
+
+
+
+.text{
+    max-height: 85px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height .4s ease-in-out;
+}
+
+.overflow{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.overflow[data-state="visible"]{
+    display: inline;
+}
+
+.toggle{
+    height: 5vh;
+    width: 10vw;
+    margin-left: 10vw;
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: solid #000 .5px;
+    color: #000;
+    font-size: 0.7em;
+    transition: all .5s ease-in-out;
+    margin-bottom: 10vh;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;    
+}

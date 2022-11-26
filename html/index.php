@@ -99,8 +99,7 @@
                 <li><a href="../Backend/Usuario/login.html">Login / Cadastro</a></li>
                 <li><a href="../Backend/ONG/ong_list.php" class="ongs">ONGs</a></li>
                 <div class="ong_opcoes"></div>
-                <li><a href="">Sobre o Site</a></li>
-                <li><a href="">O Grupo</a></li>
+                <li><a href="../grupo/">O Grupo</a></li>
                 <li><a href="../admin/php/">Administrador</a></li>
             </ul>
         </div>
