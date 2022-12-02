@@ -88,7 +88,12 @@
     <div id="itens-menu" class="itens-menu">
 
         <div class="itens-menu-left" id="itens-menu-left">
-            <img src="logo_contorno_branco.png">
+            <div class="top">
+                <img src="logo_contorno_branco.png">
+                <label for="fechar_items-menu">x</label>
+                <button id="fechar_items-menu" onclick="display_block()"></button>
+            </div>
+            
             <ul>
                 <li><a href="../Backend/Usuario/login.html">Login / Cadastro</a></li>
                 <li><a href="../Backend/ONG/ong_list.php" class="ongs">ONGs</a></li>
@@ -353,6 +358,52 @@
 
         
 
+    </div>
+
+    <div id="navigation" class="navigation navigation2">
+        <ul>
+            <li class="list active">
+                <a href="#body">
+                    <span class="text">Início</span>
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#regioes">
+                    <span class="text">Regiões</span>
+                    <span class="icon">
+                        <ion-icon name="map-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#economia">
+                    <span class="text">Economia</span>
+                    <span class="icon">
+                        <ion-icon name="bar-chart-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#ong">
+                    <span class="text">ONGs</span>
+                    <span class="icon">
+                        <ion-icon name="heart-circle-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#pontos">
+                    <span class="text">Contato</span>
+                    <span class="icon">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
     </div>
 
     <footer>

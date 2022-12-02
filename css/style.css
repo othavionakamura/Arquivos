@@ -550,6 +550,13 @@ footer:hover {
         line-height: 80%;
         text-transform: uppercase;
     }
+
+
+
+
+    footer{
+        display: none;
+    }
 }
 
 

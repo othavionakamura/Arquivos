@@ -307,6 +307,101 @@ nav {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 775px) {
+    nav{
+        justify-content: space-between;
+    }
+    .itens-menu-right{
+        display: none;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+
+
+
+
+
+    #itens-menu .itens-menu-left{
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        transform: translateX(-200%);
+        transition: all .5s ease-in-out;
+    }
+
+    .itens-menu-left .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    
+    .itens-menu-left img{
+        width: auto;
+        height: 10vh;
+        margin: 0;
+        margin-right: 50vw;
+    }
+
+    .itens-menu-left label{
+        color: #fff;
+        font-weight: 600;
+        font-size: 3em;
+        width: 20%;
+        text-align: end;
+    }
+    
+    .itens-menu-left label:hover{
+        cursor: pointer;
+    }
+    
+    .itens-menu-left ul{
+        list-style: georgian;
+        margin: 0;
+        height: 80vh;
+        line-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .itens-menu-left ul li{
+        color: rgb(202, 202, 202);
+    }
+    
+    .itens-menu-left ul li a{
+        text-decoration: none;
+        color: rgb(235, 235, 235);
+        font-size: 3em;
+    }
+    
+    .itens-menu-left ul li a:hover{
+        text-decoration: underline;
+    }
+
+
+
+
+
+    
+
+
+
+
+    .navigation2 {
+        background-color: #000;
+        border-radius: 50px 50px 0 0;
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
 @media screen and (max-height: 660px) {
     .navigation ul li a .icon {
         font-size: 1.3em;
